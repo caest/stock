@@ -1,0 +1,2750 @@
+//main page
+.hero {
+  background: url("../images/main/hero-bg.png") no-repeat center;
+  background-size: cover;
+  height: 90vh;
+  display: flex;
+  align-items: flex-end;
+  margin-top: 140px;
+
+  &__content {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-bottom: 150px;
+  }
+  &__title {
+    font-family: "Geologica";
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #fff;
+    max-width: 900px;
+    padding-bottom: 35px;
+    &.black {
+      color: #161616;
+    }
+  }
+  &__text {
+    font-family: "Geologica";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 120%;
+    max-width: 800px;
+    color: #fff;
+    padding-bottom: 25px;
+    &.black {
+      color: #161616;
+    }
+  }
+  &__button {
+    background: #ffffff;
+    color: #161616;
+    border-radius: 50px;
+    padding: 12px 24px;
+    font-family: "Geologica";
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    &.black {
+      background: #161616;
+      color: #fff;
+    }
+  }
+  &__ratings {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 16px;
+    gap: 12px;
+    &-text {
+      p {
+        &:nth-child(1) {
+          font-family: "Geologica";
+          font-weight: 600;
+          font-size: 18px;
+          color: #2d2d2d;
+        }
+        &:nth-child(2) {
+          font-family: "Geologica";
+          font-weight: 400;
+          font-size: 12px;
+          color: #2d2d2d;
+          span {
+            font-family: "Geologica";
+            font-weight: 600;
+            font-size: 12px;
+            text-decoration: underline;
+            text-decoration-style: solid;
+            text-decoration-thickness: 8.5%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.showcase {
+  border-bottom: 1px solid #484848;
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+  &__column {
+    padding-top: 160px;
+    width: 50%;
+    position: relative;
+
+    &:nth-child(1) {
+      border-right: 1px solid #484848;
+    }
+    &:nth-child(2) {
+      padding-left: 100px;
+      img {
+        max-width: 455px;
+        margin-left: auto;
+      }
+    }
+  }
+  &__title {
+    font-family: "Geologica";
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #161616;
+    padding-bottom: 30px;
+  }
+  &__text {
+    font-family: "Geologica";
+    font-weight: 400;
+    font-size: 20px;
+    color: #161616;
+    padding-bottom: 35px;
+  }
+  &__link {
+    box-shadow: 0px 2px 8px 0px #0000001a;
+    font-family: "Geologica";
+    color: #161616;
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 16px;
+    padding: 8px 16px;
+    background: #fff;
+  }
+}
+.price-week-tablet {
+  display: none !important;
+}
+.hotsale {
+  padding: 160px 0;
+  &__title {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+  }
+  &__link {
+    font-family: "Geologica";
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    border-bottom: 1px solid #161616;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 60px;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__button {
+    display: none;
+  }
+  &__column {
+    &:nth-child(1) {
+      .hotsale__link {
+        display: none;
+      }
+    }
+    width: 50%;
+    position: relative;
+    .sale-button-next {
+      position: absolute;
+      top: 50%;
+      right: -20px;
+      z-index: 1;
+      transform: translateY(-50%);
+    }
+    .sale-button-prev {
+      position: absolute;
+      top: 50%;
+      left: -20px;
+      z-index: 1;
+      transform: translateY(-50%);
+    }
+    .sale-pagination {
+      padding-top: 20px;
+      display: flex;
+      justify-content: center !important;
+    }
+
+    &_link {
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 36px;
+      text-transform: uppercase;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 36px;
+      box-shadow: 0px 2px 8px 0px #0000001a;
+      border-radius: 50px;
+      background: #fff;
+      gap: 10px;
+    }
+  }
+}
+
+.sale__slider-wrapper {
+  overflow: hidden;
+}
+.price-week {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("../images/main/banner.png") no-repeat;
+  background-size: cover;
+}
+.workflow {
+  background: url("../images/main/map.svg") no-repeat;
+  background-size: cover;
+  padding: 160px 0 160px 0;
+  &__title {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  &__description {
+    text-align: center;
+    padding-top: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  &__cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding-top: 80px;
+  }
+  &__slider {
+    display: none;
+    overflow: hidden;
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 20px 0;
+    gap: 20px;
+  }
+  &-button {
+    &-next,
+    &-prev {
+      width: 36px;
+      height: 36px;
+    }
+  }
+  &__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 24px;
+    background: #fff;
+    width: calc((100% - 3 * 20px) / 4);
+    position: relative;
+    padding: 40px 30px;
+    box-shadow: 0px 2px 8px 0px #0000000d;
+    &:nth-child(1) {
+      &:before {
+        content: "01";
+        position: absolute;
+        top: -50px;
+        z-index: -1;
+        font-family: "Geologica";
+        font-weight: 600;
+        font-size: 64px;
+        text-transform: uppercase;
+        color: #161616;
+      }
+    }
+    &:nth-child(2) {
+      &:before {
+        content: "02";
+        position: absolute;
+        top: -50px;
+        z-index: -1;
+        font-family: "Geologica";
+        font-weight: 600;
+        font-size: 64px;
+        text-transform: uppercase;
+        color: #161616;
+      }
+    }
+    &:nth-child(3) {
+      &:before {
+        content: "03";
+        position: absolute;
+        top: -50px;
+        z-index: -1;
+        font-family: "Geologica";
+        font-weight: 600;
+        font-size: 64px;
+        text-transform: uppercase;
+        color: #161616;
+      }
+    }
+    &:nth-child(4) {
+      &:before {
+        content: "04";
+        position: absolute;
+        top: -50px;
+        z-index: -1;
+        font-family: "Geologica";
+        font-weight: 600;
+        font-size: 64px;
+        text-transform: uppercase;
+        color: #161616;
+      }
+    }
+    &-title {
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 120%;
+      text-transform: uppercase;
+      color: #161616;
+      min-height: 90px;
+    }
+    &-text {
+      font-family: "Geologica";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 120%;
+      color: #484848;
+    }
+  }
+}
+
+.reviews {
+  padding: 160px 0;
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 90px;
+  }
+  &__content {
+    overflow: hidden;
+  }
+  &__title {
+    font-family: "Geologica";
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+    color: #161616;
+  }
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+  &__slide {
+    background: #fafafa;
+    padding: 80px 60px;
+    position: relative;
+    height: 525px !important;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    &::before {
+      content: "";
+      background: url("../images/main/quote.svg") no-repeat center;
+      width: 110px;
+      height: 80px;
+      position: absolute;
+      top: -40px;
+    }
+    &-title {
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 130%;
+      text-transform: uppercase;
+      color: #161616;
+    }
+    &-text {
+      padding-top: 30px;
+      font-family: "Geologica";
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 130%;
+      color: #161616;
+      max-width: 690px;
+    }
+    &-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+  &__autor {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    &-name {
+      font-family: "Geologica";
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 130%;
+      letter-spacing: 0%;
+      color: #484848;
+    }
+    &-job {
+      font-family: "Geologica";
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 130%;
+      letter-spacing: 0%;
+      color: #484848;
+    }
+  }
+  &__google {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    &-rating {
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 18px;
+      color: #161616;
+    }
+    &-reviews {
+      font-family: "Geologica";
+      font-weight: 400;
+      font-size: 12px;
+      color: #161616;
+      span {
+        font-weight: 600;
+        font-size: 12px;
+        text-decoration: underline;
+        text-decoration-style: solid;
+        text-decoration-offset: 15%;
+        text-decoration-thickness: 8.5%;
+      }
+    }
+  }
+  &-pagination {
+    margin-top: 20px;
+  }
+}
+
+.offers {
+  padding-bottom: 160px;
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 60px;
+  }
+  &__button {
+    display: none;
+  }
+  &__content {
+    position: relative;
+  }
+  &__title {
+    font-family: "Geologica";
+    font-weight: 600;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #161616;
+  }
+  &__link {
+    font-family: "Geologica";
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #161616;
+    border-bottom: 1px solid #161616;
+    &-tablet {
+      display: none;
+    }
+  }
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+  &-button-next,
+  &-button-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    left: -25px;
+  }
+  &-button-next {
+    left: initial;
+    right: -25px;
+  }
+
+  .product-card {
+    width: initial;
+  }
+}
+
+//product
+.product {
+  &-card {
+    width: calc(25% - 20px);
+    &__top {
+      position: relative;
+      img {
+        width: 100%;
+      }
+    }
+    &__quality {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 60px;
+      height: 45px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &--red {
+        background: #ffd7d3;
+        p {
+          color: #e00d0d;
+        }
+      }
+      &--yellow {
+        background: #fff1d4;
+        p {
+          color: #ffae00;
+        }
+      }
+      &--green {
+        background: #d3fff1;
+        color: #00b57a;
+      }
+      p {
+        font-family: "Geologica";
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: uppercase;
+      }
+    }
+    &__bottom {
+      padding-top: 25px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+    &__name {
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 130%;
+      color: #161616;
+      padding-bottom: 25px;
+    }
+    &__price {
+      font-family: "Geologica";
+      font-weight: 400;
+      font-size: 20px;
+      color: #161616;
+      span {
+        font-family: "Geologica";
+        font-weight: 400;
+        font-size: 16px;
+        color: #868686;
+      }
+    }
+    &__button {
+      width: 56px;
+      height: 56px;
+      border-radius: 50%;
+      background: #161616;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+    &.sale {
+    }
+  }
+}
+
+//catalog
+.catalog {
+  margin-top: 130px;
+  &__header {
+    padding-top: 60px;
+  }
+  &__title {
+    font-family: "Geologica";
+    font-weight: 600;
+    font-size: 56px;
+    text-transform: uppercase;
+    color: #161616;
+  }
+  &__controls {
+    padding-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+  }
+  &__filters {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    &-toggle {
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 20px;
+      text-transform: uppercase;
+      box-shadow: 0px 2px 8px 0px #0000001a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      width: 415px;
+      height: 50px;
+      border-radius: 50px;
+    }
+    &-btn {
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 20px;
+      text-transform: uppercase;
+      box-shadow: 0px 2px 8px 0px #0000001a;
+      height: 50px;
+      border-radius: 50px;
+      background: #fff;
+      color: #161616;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      &.is-active {
+        color: #ffffff;
+        background: #161616;
+      }
+    }
+    &-list {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      max-width: 840px;
+      overflow-x: auto;
+      white-space: nowrap;
+      padding: 0 10px 0 0;
+      height: 60px;
+    }
+    &-popup {
+      position: fixed;
+      top: 0;
+      left: -515px;
+      width: 515px;
+      height: 100%;
+      background: #fff;
+      transition: left 0.3s;
+      z-index: 1000;
+      box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+      &.active {
+        left: 0;
+      }
+      &__content {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+      &__title {
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-family: "Geologica";
+      }
+      &__header {
+        height: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        font-size: 20px;
+        font-family: "Geologica";
+        background: #fafafa;
+        margin-bottom: 50px;
+      }
+      &__body {
+        padding-left: 100px;
+        overflow-y: auto;
+        flex: 1;
+      }
+
+      &__close {
+        position: absolute;
+        right: 20px;
+        cursor: pointer;
+      }
+    }
+  }
+  &__sort {
+    display: inline-block;
+    &__toggle {
+      text-transform: uppercase;
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid #161616;
+      &.is-active {
+        img {
+          transform: rotateX(180deg);
+        }
+      }
+    }
+    &__list {
+      position: absolute;
+      background: #fff;
+      top: 100%;
+      right: 0;
+      display: none;
+      z-index: 10;
+      padding: 20px;
+      box-shadow: 0px 2px 8px 0px #0000001a;
+      &.active {
+        display: block;
+      }
+    }
+    &__option {
+      text-transform: uppercase;
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 20px;
+      margin-bottom: 10px;
+      max-width: max-content;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &.is-active {
+        border-bottom: 1px solid #161616;
+      }
+    }
+  }
+  &__products {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 20px;
+    .products__item {
+      width: calc(25% - 20px);
+      .product-card {
+        width: 100%;
+      }
+    }
+  }
+  &__pagination {
+    margin-top: 80px;
+  }
+}
+.popup-filters {
+  &__list {
+    display: none;
+    &.active {
+      display: block;
+    }
+  }
+  &__group {
+    padding-bottom: 40px;
+  }
+  &__toggle {
+    display: flex;
+    align-items: center;
+    font-family: "Geologica";
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    img {
+      position: absolute;
+      right: 20px;
+    }
+    &.is-active {
+      img {
+        transform: rotate(180deg);
+      }
+    }
+    span {
+      color: #868686;
+      padding-left: 20px;
+    }
+  }
+  &__list {
+    padding-top: 20px;
+  }
+  &__option {
+    font-family: "Geologica";
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    &.is-active {
+      border-bottom: 1px solid #161616;
+    }
+  }
+  &__actions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding-right: 20px;
+    padding-bottom: 70px;
+  }
+  &__clear {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Geologica";
+    text-transform: uppercase;
+    color: #161616;
+    background: #fff;
+    padding: 12px 24px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1019607843);
+  }
+  &__apply {
+    font-size: 20px;
+    font-weight: 600;
+    font-family: "Geologica";
+    text-transform: uppercase;
+    color: #fff;
+    background: #161616;
+    padding: 12px 24px;
+    border-radius: 50px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1019607843);
+  }
+}
+
+//product page
+
+.product {
+  &-page {
+    overflow: hidden;
+    margin-top: 130px;
+    .catalog__breadcrumbs {
+      display: none;
+    }
+    &__content {
+      padding-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__column {
+      width: calc(30% - 30px);
+      &:nth-child(1) {
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .catalog__breadcrumbs {
+          display: block;
+        }
+      }
+      &:nth-child(2) {
+        width: calc(40% - 30px);
+        position: relative;
+        img {
+          width: 100%;
+          height: -webkit-fill-available;
+        }
+      }
+      &:nth-child(3) {
+        padding-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    &__subtitle {
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 130%;
+      color: #161616;
+      padding-bottom: 40px;
+    }
+    &__text {
+      p {
+        font-family: "Geologica";
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 120%;
+        color: #484848;
+      }
+    }
+    &__info {
+      flex: 1;
+      &-pallet {
+        flex: none;
+      }
+    }
+    &__title {
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 56px;
+      line-height: 120%;
+      text-transform: uppercase;
+      color: #161616;
+      padding-bottom: 50px;
+    }
+    &__stock {
+      padding-bottom: 50px;
+      &--instock {
+        font-family: "Geologica";
+        font-weight: 400;
+        font-size: 18px;
+        color: #00b57a;
+      }
+      &--outstock {
+        color: #e00d0d;
+        font-family: "Geologica";
+        font-weight: 400;
+        font-size: 18px;
+      }
+    }
+    &__description {
+      padding-bottom: 50px;
+      p {
+        font-family: "Geologica";
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 130%;
+        color: #484848;
+      }
+    }
+    &__variation {
+      &-group {
+        padding-bottom: 40px;
+      }
+      &-label {
+        font-family: "Geologica";
+        font-weight: 400;
+        font-size: 18px;
+        color: #484848;
+        padding-bottom: 20px;
+      }
+      &-list {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        overflow-x: auto;
+        padding: 5px 0;
+      }
+      &-button {
+        background: #fff;
+        box-shadow: 0px 2px 8px 0px #0000001a;
+        font-family: "Geologica";
+        font-weight: 600;
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #161616;
+        border-radius: 50px;
+        padding: 12px 24px;
+        text-wrap: nowrap;
+        &.is-active {
+          background: #161616;
+          color: #fff;
+        }
+      }
+      &-select {
+        position: relative;
+      }
+      &-toggle {
+        background: #fff;
+        box-shadow: 0px 2px 8px 0px #0000001a;
+        font-family: "Geologica";
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #161616;
+        border-radius: 50px;
+        padding: 12px 24px;
+        width: 100%;
+        text-align: left;
+        img {
+          position: absolute;
+          right: 24px;
+          top: 18px;
+        }
+        &.is-active {
+          img {
+            transform: rotate(180deg);
+          }
+        }
+      }
+      &-dropdown {
+        position: absolute;
+        background: #fff;
+        top: 100%;
+        left: 0;
+        top: 50px;
+        display: none;
+        z-index: 10;
+        padding: 20px;
+        box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1019607843);
+        &.active {
+          display: block;
+        }
+      }
+      &-option {
+        font-family: "Geologica";
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #161616;
+        padding-bottom: 3px;
+        &.is-active {
+          border-bottom: 1px solid #161616;
+        }
+        &:last-child {
+          padding-bottom: 0;
+        }
+      }
+    }
+    &__classification {
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 16px;
+      color: #161616;
+      box-shadow: 0px 2px 8px 0px #0000001a;
+      border-radius: 50px;
+      padding: 12px;
+      background: #fff;
+      width: max-content;
+      position: absolute;
+      top: 30px;
+      right: 30px;
+    }
+    &__sku {
+      font-family: "Geologica";
+      font-weight: 400;
+      font-size: 18px;
+      color: #484848;
+      padding-bottom: 30px;
+    }
+    &__quantity {
+      font-family: "Geologica";
+      font-weight: 400;
+      font-size: 18px;
+      color: #484848;
+    }
+    &__price {
+      &-wrap {
+        display: flex;
+        align-items: flex-end;
+        gap: 5px;
+      }
+      &-container {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+      }
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 40px;
+      text-align: right;
+      color: #161616;
+      line-height: 30px;
+      &-perkilo {
+        font-family: "Geologica";
+        font-weight: 400;
+        font-size: 16px;
+        color: #868686;
+      }
+      &-vat {
+        font-family: "Geologica";
+        font-weight: 400;
+        font-size: 16px;
+        color: #868686;
+        line-height: 15px;
+      }
+      span {
+        font-family: "Geologica";
+        font-weight: 400;
+        font-size: 16px;
+        color: #868686;
+      }
+    }
+    &__buy {
+      &-column {
+        padding-top: 50px;
+      }
+      &-btn {
+        font-family: "Geologica";
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fff;
+        background: #161616;
+        padding: 12px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        border-radius: 50px;
+      }
+      &-pallet {
+        font-family: "Geologica";
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fff;
+        background: #161616;
+        padding: 12px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        width: 100%;
+        border-radius: 50px;
+        &.mobile {
+          display: none;
+        }
+      }
+      &-row {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      p {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        span {
+          font-family: "Geologica";
+          font-weight: 400;
+          font-size: 16px;
+          color: #868686;
+        }
+      }
+    }
+    &__quantity {
+      &-title {
+        padding-bottom: 20px;
+        font-family: "Geologica";
+        font-weight: 400;
+        font-size: 18px;
+        color: #484848;
+      }
+      &-form {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        button {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 12px 24px;
+          height: 45px;
+          width: fit-content;
+          background: #fff;
+          box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1019607843);
+          color: #161616;
+          border-radius: 50px;
+          font-family: "Geologica";
+          font-weight: 600;
+          font-size: 16px;
+          text-transform: uppercase;
+        }
+        span {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          min-width: 75px;
+          padding: 12px 24px;
+          height: 45px;
+          background: #fff;
+          box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1019607843);
+          color: #161616;
+          border-radius: 50px;
+          font-family: "Geologica";
+          font-weight: 600;
+          font-size: 16px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
+.pallet-form {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+  label {
+    font-family: "Geologica";
+    font-weight: 400;
+    font-size: 18px;
+    color: #484848;
+    padding-bottom: 20px;
+  }
+  input {
+    background: #fff;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1019607843);
+    font-family: "Geologica";
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #161616;
+    border-radius: 50px;
+    padding: 12px 24px;
+    width: 100%;
+    border: none;
+    &::placeholder {
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #161616;
+    }
+  }
+}
+
+/* pallet popup */
+.popup-pallet {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(15px);
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.popup-pallet.active {
+  display: flex;
+}
+
+.popup-pallet__content {
+  background: #fff;
+  width: 415px;
+  max-width: 90%;
+  overflow: hidden;
+  box-shadow: 0px 2px 8px 0px #0000001a;
+}
+
+.popup-pallet__header {
+  display: flex;
+  align-items: center;
+  background: #fafafa;
+  height: 100px;
+  justify-content: center;
+  position: relative;
+}
+
+.popup-pallet__title {
+  font-family: "Geologica";
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #161616;
+}
+
+.popup-pallet__close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 35px;
+}
+
+.popup-pallet__body {
+  padding: 50px 30px 30px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+.popup-pallet__row {
+  font-family: "Geologica";
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #161616;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.popup-pallet__ok {
+  font-family: "Geologica";
+  font-weight: 600;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 50px;
+  padding: 12px 24px;
+  background: #161616;
+}
+
+/* pallet popup */
+.similar-products {
+  padding-top: 160px;
+  &__title {
+    text-align: center;
+  }
+  &__content {
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    .products__item {
+      width: calc(25% - 20px);
+      .product-card {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.contactus {
+  padding-top: 160px;
+  &__title {
+    text-align: center;
+  }
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-top: 60px;
+  }
+  &__column {
+    width: calc(50% - 20px);
+    box-shadow: 0px 2px 8px 0px #0000000d;
+    background: #fff;
+    padding: 30px;
+    &-title {
+      padding-bottom: 50px;
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 36px;
+      text-transform: uppercase;
+    }
+    &-description {
+      padding-bottom: 30px;
+      font-family: "Geologica";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 120%;
+      color: #484848;
+    }
+    &-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      border: 1px solid #161616;
+      border-radius: 50px;
+      padding: 12px 12px 12px 24px;
+      min-width: 370px;
+      width: fit-content;
+      span {
+        font-family: "Geologica";
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #161616;
+      }
+    }
+  }
+}
+
+//cart
+.shop {
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  &__container {
+    width: 76%;
+  }
+  &__sidebar {
+    width: 24%;
+  }
+  &__title {
+    font-family: "Geologica";
+    font-weight: 600;
+    font-size: 56px;
+    text-transform: uppercase;
+    color: #161616;
+  }
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  &__link {
+    &-shop {
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #161616;
+      border-bottom: 1px solid #161616;
+    }
+  }
+}
+.cart {
+  margin-top: 130px;
+  padding-top: 120px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__item {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    border-bottom: 1px solid #868686;
+    padding: 80px 0 30px 0;
+    &:first-child {
+      padding: 0 0 30px 0;
+    }
+    &:last-child {
+      padding: 80px 0 0 0;
+      border: none;
+    }
+    &-img {
+      max-width: 240px;
+    }
+    &-name {
+      padding-bottom: 30px;
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 130%;
+      color: #161616;
+    }
+    &-category {
+      padding-bottom: 20px;
+      font-family: "Geologica";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 130%;
+      color: #484848;
+    }
+    &-sku {
+      font-family: "Geologica";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 130%;
+      color: #484848;
+    }
+    &-column {
+      display: flex;
+      gap: 20px;
+      &.desktop-dn {
+        display: block;
+      }
+      &:nth-child(1) {
+        width: 45%;
+      }
+      &:nth-child(2) {
+        width: 20%;
+      }
+      &:nth-child(3) {
+        width: 33%;
+      }
+      &:nth-child(4) {
+        width: 2%;
+      }
+    }
+    &-info {
+      .cart__item-qty {
+        display: none;
+      }
+      .cart__item-cell {
+        display: none;
+      }
+      .cart__item-vat {
+        display: none;
+      }
+    }
+    &-container {
+      display: flex;
+      &.tablet {
+        display: none;
+      }
+    }
+    &-cell {
+      font-family: "Geologica";
+      font-weight: 400;
+      font-size: 18px;
+      color: #484848;
+    }
+    &-value {
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 20px;
+      text-align: left;
+      color: #161616;
+    }
+
+    &-perkg {
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 20px;
+      text-align: left;
+      color: #161616;
+    }
+    &-vat {
+      &.desktop-dn {
+        display: none;
+      }
+      p {
+        display: flex;
+        align-items: center;
+        font-family: "Geologica";
+        font-weight: 400;
+        font-size: 18px;
+        color: #484848;
+      }
+    }
+  }
+
+  &__container {
+    box-shadow: 0px 2px 8px 0px #0000001a;
+    margin-bottom: 30px;
+    &-header {
+      height: 85px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #fafafa;
+    }
+    &-title {
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 20px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #161616;
+    }
+    &-body {
+      padding: 20px 20px 30px 20px;
+    }
+  }
+  &__summary {
+    &-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 30px;
+    }
+    &-border {
+      border-top: #868686 1px solid;
+      padding-top: 30px;
+    }
+    &-amount {
+      font-family: "Geologica";
+      font-weight: 400;
+      font-size: 20px;
+      text-align: right;
+      color: #161616;
+    }
+    &-subtotal,
+    &-total,
+    &-vat {
+      font-family: "Geologica";
+      font-weight: 400;
+      font-size: 20px;
+      color: #484848;
+    }
+    &-button {
+      a {
+        font-family: "Geologica";
+        font-weight: 600;
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fff;
+        background: #161616;
+        padding: 12px 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        border-radius: 50px;
+        &.disable {
+          background: #868686;
+        }
+      }
+      p {
+        display: flex;
+        justify-content: center;
+        padding-top: 10px;
+        gap: 5px;
+        span {
+          font-family: "Geologica";
+          font-weight: 400;
+          font-size: 16px;
+          color: #868686;
+        }
+      }
+    }
+  }
+  &__note {
+    padding: 20px;
+    font-family: "Geologica";
+    font-weight: 400;
+    font-size: 20px;
+    color: #484848;
+    background: #fafafa;
+    a {
+      font-weight: 600;
+    }
+  }
+}
+.form-discount {
+  display: flex;
+  align-items: center;
+  position: relative;
+  input {
+    width: 100%;
+    font-family: "Geologica";
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #161616;
+    border-radius: 50px;
+    padding: 12px 24px;
+    box-shadow: 0px 2px 8px 0px #0000001a;
+    border: none;
+
+    &::placeholder {
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 20px;
+      text-transform: uppercase;
+      color: #868686;
+    }
+  }
+  button {
+    width: 30%;
+    right: 0px;
+    top: 0;
+    position: absolute;
+    font-family: "Geologica";
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    background: #161616;
+    padding: 12px 24px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    img {
+      display: none;
+    }
+    &.is-active {
+      background: #d3fff1;
+      span {
+        display: none;
+      }
+      img {
+        display: block;
+      }
+    }
+  }
+}
+
+//checkout
+.shop {
+  &__label {
+    font-family: "Geologica";
+    font-weight: 400;
+    font-size: 20px;
+    letter-spacing: 0%;
+    color: #484848;
+    margin-bottom: 25px;
+    display: block;
+  }
+  &__tab {
+    border-bottom: 1px solid #868686;
+    padding-bottom: 60px;
+    &:nth-child(2) {
+      padding-top: 60px;
+      border: none;
+    }
+    &-title {
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 40px;
+      letter-spacing: 0%;
+      color: #161616;
+    }
+    &-select {
+      position: relative;
+      &-wrap {
+        padding-top: 40px;
+      }
+    }
+    &-toggle {
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: 0%;
+      text-transform: uppercase;
+      color: #161616;
+      box-shadow: 0px 2px 8px 0px #0000001a;
+      background: #fff;
+      border-radius: 50px;
+    }
+    &-current {
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: 0%;
+      text-transform: uppercase;
+      color: #161616;
+      span {
+        color: #868686;
+        font-family: "Geologica";
+        font-weight: 600;
+        font-size: 20px;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+      }
+    }
+    &-icon {
+      &.is-active {
+        transform: rotateX(180deg);
+      }
+    }
+    &-option {
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: 0%;
+      text-transform: uppercase;
+      color: #161616;
+      &.is-active {
+        border-bottom: 1px solid #161616;
+      }
+      span {
+        font-family: "Geologica";
+        font-weight: 600;
+        font-size: 20px;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        color: #868686;
+      }
+    }
+    &-dropdown {
+      position: absolute;
+      background: #fff;
+      top: 60px;
+      left: 0;
+      display: none;
+      z-index: 10;
+      padding: 20px;
+      box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1019607843);
+      &.active {
+        display: block;
+      }
+    }
+    &-button {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 30px;
+      button {
+        background: #161616;
+        color: #fff;
+        box-shadow: 0px 2px 8px 0px #0000001a;
+        border-radius: 50px;
+        padding: 12px 24px;
+        font-family: "Geologica";
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 130%;
+        letter-spacing: 0%;
+        text-transform: uppercase;
+        min-width: 375px;
+        width: fit-content;
+      }
+    }
+  }
+  &__controls {
+    margin-top: 50px;
+    box-shadow: 0px 2px 8px 0px #0000001a;
+    background: #fff;
+    &-radio {
+      display: none;
+    }
+    &-header {
+      height: 85px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: 0%;
+      text-align: center;
+      text-transform: uppercase;
+      color: #161616;
+      background: #fafafa;
+    }
+    &-body {
+      padding: 30px 20px;
+    }
+    &-container {
+      display: flex;
+      align-items: center;
+      label {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+    &-label {
+      font-family: "Geologica";
+      font-weight: 400;
+      font-size: 20px;
+      letter-spacing: 0%;
+      color: #484848;
+    }
+  }
+
+  &__form {
+    &-row {
+      margin-top: 50px;
+    }
+    &-wrap {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    &-input {
+      box-shadow: 0px 2px 8px 0px #0000001a;
+      background: #fff;
+      border-radius: 50px;
+      padding: 16px 24px;
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 130%;
+      text-transform: uppercase;
+      color: #161616;
+      border: none;
+      width: 100%;
+      &::placeholder {
+        font-family: "Geologica";
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 130%;
+        text-transform: uppercase;
+        color: #868686;
+      }
+    }
+
+    &-field {
+      &.w30 {
+        width: calc(30% - 20px);
+      }
+      &.w50 {
+        width: calc(50% - 20px);
+      }
+      &.w70 {
+        width: calc(70% - 20px);
+      }
+      &.w100 {
+        width: 100%;
+      }
+    }
+    &-container {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+      margin-bottom: 25px;
+      .shop__label {
+        margin-bottom: 0;
+      }
+    }
+  }
+  &__account {
+    display: flex;
+    max-width: 415px;
+    span {
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 130%;
+      letter-spacing: 0%;
+      color: #161616;
+    }
+    a {
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 130%;
+      letter-spacing: 0%;
+      text-transform: uppercase;
+      color: #161616;
+      text-decoration: underline;
+      span {
+        text-transform: lowercase !important;
+      }
+    }
+  }
+}
+.shop__tab-hide {
+  font-family: "Geologica";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #484848;
+  padding-top: 50px;
+}
+.shop__tab:nth-child(2) .shop__tab-container {
+  display: none;
+}
+.shop__tab:nth-child(2) .shop__tab-hide {
+  display: block;
+}
+
+.custom-radio,
+.shop__form-custom-radio {
+  width: 24px;
+  height: 24px;
+  border: 1px solid #161616;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+}
+
+.shop__controls-radio:checked + label .custom-radio::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background-color: #161616;
+  border-radius: 50%;
+}
+.shop__form-radio {
+  display: none;
+}
+.shop__form-radio:checked + label .shop__form-custom-radio::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background-color: #161616;
+  border-radius: 50%;
+}
+
+.summary-delivery {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  span {
+    font-family: "Geologica";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: #484848;
+  }
+}
+.summary-details {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  & span {
+    font-family: "Geologica";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: #484848;
+  }
+}
+.change-btn {
+  font-family: "Geologica";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #161616;
+  border-radius: 50px;
+  padding: 12px 24px;
+  border: 1px solid #161616;
+}
+
+.error-text {
+  font-family: "Geologica";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #e00d0d;
+}
+
+.checkout {
+  margin-top: 130px;
+  padding-top: 130px;
+}
+
+//page
+.page {
+  margin-top: 130px;
+  padding-top: 20px;
+  .title {
+    text-align: center;
+    padding: 70px 0;
+    font-size: 56px;
+  }
+  &__content {
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  &__container {
+    padding-bottom: 40px;
+  }
+  &__title {
+    padding-bottom: 40px;
+    font-family: "Geologica";
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #161616;
+  }
+  &__list {
+    &-item {
+      font-family: "Geologica";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 120%;
+      color: #484848;
+      list-style-type: disc;
+      margin-left: 25px;
+      padding-bottom: 10px;
+    }
+  }
+  &__text {
+    font-family: "Geologica";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #484848;
+    padding-bottom: 10px;
+    &--address {
+      font-family: "Geologica";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 40px;
+    }
+  }
+}
+
+//contact us page
+.contactus-page {
+  position: relative;
+  &__breadcrumbs {
+    position: absolute;
+    top: 20px;
+  }
+  &__info {
+    &-wrap {
+      padding-top: 160px;
+    }
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  &__container {
+    width: calc(25% - 20px);
+    box-shadow: 0px 2px 8px 0px #0000000d;
+    background: #fff;
+    padding: 40px 30px;
+    .page__title {
+      max-width: 300px;
+    }
+    .contactus__column-link {
+      gap: 10px;
+      min-width: initial;
+      span {
+        font-size: clamp(16px, 1.8vw, 18px);
+      }
+    }
+  }
+}
+
+//need help
+.needhelp {
+  padding: 160px 0;
+  background: url(../images/main/map.svg) no-repeat;
+  background-size: cover;
+  &__top {
+    max-width: 800px;
+    padding-bottom: 40px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  &__title {
+    padding-bottom: 30px;
+  }
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  &__column {
+    box-shadow: 0px 2px 8px 0px #0000000d;
+    width: calc(33% - 20px);
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    gap: 30px;
+    .page__title {
+      padding-bottom: 0;
+    }
+    .page__text {
+      max-width: 500px;
+    }
+    .contactus__column-link span {
+      font-size: clamp(16px, 2vw, 20px);
+    }
+    /*  */
+  }
+}
+
+.map {
+  margin-top: 160px;
+  padding-top: 160px;
+  padding-bottom: 230px;
+  &__content {
+    display: flex;
+    justify-content: flex-start;
+  }
+  &__info {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 2px 8px 0px #0000000d;
+    width: 415px;
+    padding: 40px 30px;
+  }
+  &__title {
+    font-family: "Geologica";
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #161616;
+  }
+  &__subtitle {
+    font-family: "Geologica";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #484848;
+    padding: 30px 0;
+  }
+  &__link {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+//about us page
+.aboutus-page {
+  &__breadcrumbs {
+    position: absolute;
+    top: 20px;
+  }
+}
+
+//faq
+.faq {
+  overflow: hidden;
+  &__title {
+    padding: 60px 0 0 0 !important;
+  }
+  &__tabs {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 20px;
+    padding: 60px 0;
+  }
+  &__tab {
+    box-shadow: 0px 2px 8px 0px #0000001a;
+    font-family: "Geologica";
+    font-weight: 600;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #161616;
+    padding: 12px 24px;
+    background: #fff;
+    border-radius: 50px;
+
+    &.is-active {
+      color: #fff;
+      background: #161616;
+    }
+  }
+  &__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 30px;
+  }
+  &__container {
+    width: calc(33% - 20px);
+    box-shadow: 0px 2px 8px 0px #0000000d;
+    padding: 20px;
+  }
+
+  &__pagination {
+    padding-top: 80px;
+  }
+}
+
+//thanks
+.thankyou {
+  padding: 160px 0;
+  &__content {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  &__title {
+    font-family: "Geologica";
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #161616;
+  }
+  &__subtitle {
+    font-family: "Geologica";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    color: #484848;
+    padding-top: 40px;
+  }
+  &__link {
+    margin-top: 30px;
+  }
+}
+
+//error
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin-top: 130px;
+  &__image {
+    &-mob {
+      display: none;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &__title {
+    margin-top: 80px;
+    text-align: center;
+    font-family: "Geologica";
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #484848;
+  }
+  &__link {
+    margin-top: 40px;
+  }
+}
+
+//main page modal
+.cookie {
+  &__modal {
+    padding: 40px 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 415px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 2px 8px 0px #0000001a;
+    z-index: 9999;
+    display: none;
+  }
+  &__title {
+    font-family: "Geologica";
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #161616;
+  }
+  &__description {
+    font-family: "Geologica";
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    color: #484848;
+    margin: 30px 0;
+    a {
+      font-weight: 700;
+    }
+  }
+  &__controls {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 20px;
+    button {
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 130%;
+      letter-spacing: 0%;
+      text-transform: uppercase;
+      border-radius: 50px;
+    }
+  }
+  &__btn {
+    &-customize {
+      color: #fff;
+      background: #161616;
+      width: 100%;
+      padding: 12px;
+      &.hidden {
+        display: none;
+      }
+    }
+    &-decline {
+      background: transparent;
+      border: 1px solid #161616;
+      color: #161616;
+      width: calc(50% - 20px);
+      padding: 12px;
+    }
+    &-accept {
+      color: #fff;
+      background: #161616;
+      width: calc(50% - 20px);
+      padding: 12px;
+      &.hidden {
+        display: none;
+      }
+    }
+    &-save {
+      color: #fff;
+      background: #161616;
+      width: calc(50% - 20px);
+      padding: 12px;
+      display: none;
+      &.active {
+        display: block;
+      }
+    }
+  }
+}
+
+.cookie__modal.active {
+  display: block;
+}
+
+.cookie__settings {
+  display: none;
+}
+.cookie__settings.active {
+  display: block;
+}
+
+.cookie__tab-body {
+  display: none;
+}
+.cookie__tab.active .cookie__tab-body {
+  display: block;
+}
+.cookie__tab.active {
+  border: 1px solid #161616;
+  .cookie__tab-button {
+    img {
+      transform: rotateX(180deg);
+    }
+  }
+}
+
+.cookie__tab {
+  box-shadow: 0px 2px 8px 0px #0000001a;
+  background: #fff;
+  border-radius: 50px;
+  padding: 12px 24px;
+  margin-bottom: 20px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  &.active {
+    border-radius: 24px;
+  }
+}
+.cookie__tab-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.cookie__tab-name {
+  font-family: "Geologica";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #161616;
+}
+
+.cookie__tab-button {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: "Geologica";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #00b57a;
+}
+.cookie__tab-body {
+  padding-top: 20px;
+  font-family: "Geologica";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  color: #484848;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 42px;
+  height: 24px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #dbdbdb;
+  transition: 0.3s;
+  border-radius: 22px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 2px;
+  bottom: 2px;
+  background-color: #484848;
+  transition: 0.3s;
+  border-radius: 50%;
+}
+
+.switch input:checked + .slider:before {
+  transform: translateX(20px);
+  background: #161616;
+  left: 0px;
+  bottom: 2px;
+}
+
+//lang modal
+
+.lang {
+  &__modal {
+    padding: 60px 30px 40px 30px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 415px;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 2px 8px 0px #0000001a;
+    z-index: 9999;
+    display: none;
+    &.active {
+      display: block;
+    }
+    &-close {
+      position: absolute;
+      right: 30px;
+      top: 20px;
+    }
+    &-description {
+      font-family: "Geologica";
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 120%;
+      letter-spacing: 0%;
+      color: #484848;
+      margin-bottom: 20px;
+    }
+
+    &-select {
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 130%;
+      letter-spacing: 0%;
+      text-transform: uppercase;
+
+      span {
+        color: #868686;
+      }
+    }
+  }
+  &__tab {
+    box-shadow: 0px 2px 8px 0px #0000001a;
+    background: #fff;
+    border-radius: 50px;
+    padding: 12px 24px;
+    margin-bottom: 20px;
+
+    &.active {
+      border-radius: 24px;
+    }
+
+    &-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+  }
+}
+
+.lang__modal-option {
+  font-family: "Geologica";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #161616;
+  span {
+    color: #868686;
+  }
+}
+
+.lang__modal-save {
+  display: none;
+  font-family: "Geologica";
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: #fff;
+  background: #161616;
+  border-radius: 50px;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  width: 100%;
+
+  &.active {
+    display: flex;
+  }
+}
+
+.lang__tab-body {
+  display: none;
+
+  flex-direction: column;
+}
+
+.lang__tab.active .lang__tab-body {
+  display: flex;
+}
+.lang__modal-option {
+  margin-top: 20px;
+}
+.lang__tab.active {
+  border: 1px solid #161616;
+}
+
+.blur-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(15px);
+  background: #ffffff1a;
+  z-index: 9998;
+  display: none;
+}
+.blur-overlay.active {
+  display: block;
+}
+
+//search popup
+
+.search__modal.active {
+  display: block;
+}
+
+.search__modal {
+  background: #fff;
+  box-shadow: 0px 2px 8px 0px #0000001a;
+  height: 85px;
+  position: fixed;
+  width: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  display: none;
+  padding: 20px 30px;
+  &-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &-icon {
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &-field {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    input {
+      width: 100%;
+      font-family: "Geologica";
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 130%;
+      letter-spacing: 0%;
+      color: #161616;
+      border: none;
+      &:focus {
+        border: none;
+        outline: none;
+      }
+      &::placeholder {
+        font-family: "Geologica";
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 130%;
+        letter-spacing: 0%;
+        color: #484848;
+      }
+    }
+    img {
+      display: none;
+      margin-right: 20px;
+      &.active {
+        display: block;
+      }
+    }
+  }
+  &-button {
+    width: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button {
+      box-shadow: 0px 2px 8px 0px #0000001a;
+      background: #161616;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 50px;
+      font-family: "Geologica";
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 130%;
+      letter-spacing: 0%;
+      text-transform: uppercase;
+      color: #fff;
+    }
+  }
+}

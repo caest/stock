@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Stock - Product default</title>
+  </head>
+  <body>
+      <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-content">
+            <ul class="header__top-menu">
+              <li class="header__top-menu-item">
+                <a class="header__top-menu-link" href="#">About us</a>
+              </li>
+              <li class="header__top-menu-item">
+                <a class="header__top-menu-link" href="#">Contact us</a>
+              </li>
+              <li class="header__top-menu-item">
+                <a class="header__top-menu-link" href="#"
+                  >Payment and delivery</a
+                >
+              </li>
+            </ul>
+            <div class="header__localization open-lang-popup">
+              <img
+                class="header__localization-icon"
+                src="./assets/images/icons/lang.svg"
+                alt="Language"
+              />
+              <span class="header__localization-text ">germany, en, €</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__main">
+        <div class="container">
+          <div class="header__main-content">
+            <div class="header__logo">
+              <img
+                class="header__logo-img"
+                src="./assets/images/icons/logo-black.svg"
+                alt="Logo"
+              />
+            </div>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">clothes</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">shoes</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">accessories</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">textile</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">mix</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">Pallet offer</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">sale</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__buttons">
+              <button class="header__search open-search-modal" type="button">
+                <img
+                  class="header__search-icon"
+                  src="./assets/images/icons/search.svg"
+                  alt="Search"
+                />
+              </button>
+              <button class="header__account" type="button">
+                <img
+                  class="header__account-icon"
+                  src="./assets/images/icons/account.svg"
+                  alt="Account"
+                />
+              </button>
+              <div class="header__cart">
+                <img
+                  class="header__cart-icon"
+                  src="./assets/images/icons/cart.svg"
+                  alt="Cart"
+                />
+                <span class="header__cart-count">0</span>
+              </div>
+              <button class="header__burger" type="button" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__mobile">
+        <div class="header__mobile-column">
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">clothes</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">shoes</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">accessories</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">textile</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">mix</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Pallet offer</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">sale</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__mobile-column">
+          <div class="header__localization open-lang-popup">
+            <img
+              class="header__localization-icon"
+              src="./assets/images/icons/lang-black.svg"
+              alt="Language"
+            />
+            <span class="header__localization-text">germany, en, €</span>
+          </div>
+        </div>
+        <div class="header__mobile-column">
+          <ul class="header__mobile-list">
+            <li class="header__mobile-list-item">
+              <a href="#" class="header__mobile-list-link">About us</a>
+            </li>
+            <li class="header__mobile-list-item">
+              <a href="#" class="header__mobile-list-link">Contact us</a>
+            </li>
+            <li class="header__mobile-list-item">
+              <a href="#" class="header__mobile-list-link"
+                >payment and delivery</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="header__mobile-column">
+          <ul class="header__mobile-list">
+            <li class="header__mobile-list-item">
+              <a href="#" class="header__mobile-list-link">Returns</a>
+            </li>
+            <li class="header__mobile-list-item">
+              <a href="#" class="header__mobile-list-link">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__mobile-column">
+          <a href="#" class="header-contact">
+            <div class="header-contact-text">contact via messenger</div>
+            <img
+              class="header-contact-icon"
+              src="./assets/images/icons/whatsapp.svg"
+              alt=""
+            />
+          </a>
+
+          <a href="#" class="header-contact">
+            <div class="header-contact-text">contact via messenger</div>
+            <img
+              class="header-contact-icon"
+              src="./assets/images/icons/inst.svg"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="product-page">
+      <div class="container">
+         <nav class="catalog__breadcrumbs breadcrumbs">
+              <a class="breadcrumbs__link" href="#">Home</a>
+              <span class="breadcrumbs__divider">/</span>
+              <a class="breadcrumbs__link" href="#">Clothes</a>
+              <span class="breadcrumbs__divider">/</span>
+              <a class="breadcrumbs__link" href="#">C Accessories AC AC401</a>
+            </nav>
+        <div class="product-page__content">
+          <div class="product-page__column">
+            <nav class="catalog__breadcrumbs breadcrumbs">
+              <a class="breadcrumbs__link" href="#">Home</a>
+              <span class="breadcrumbs__divider">/</span>
+              <a class="breadcrumbs__link" href="#">Clothes</a>
+              <span class="breadcrumbs__divider">/</span>
+              <a class="breadcrumbs__link" href="#">C Accessories AC AC401</a>
+            </nav>
+
+            <div class="product-page__description">
+              <div class="product-page__subtitle">About</div>
+              <div class="product-page__text">
+                <p>
+                  Accessories with visible defects or signs of wear. Each
+                  package may include belts, wallets, scarves, socks, key rings,
+                  hats, neckerchiefs, jewelry, and other items suitable for
+                  discount sales or clearance.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="product-page__column">
+            <div class="product-card__quality product-card__quality--red">
+              <p>C</p>
+            </div>
+            <img
+              src="./assets/images/product/product-page-1.png"
+              alt=""
+              class="product-page__image"
+            />
+          </div>
+          <div class="product-page__column">
+            <div class="product-page__info">
+              <div class="product-page__title">C Accessories AC AC401</div>
+              <div class="product-page__stock product-page__stock-instock">
+                <span class="product-page__stock--instock">In stock</span>
+              </div>
+              <div class="product-page__description">
+                <p>
+                  Accessories in category C. They come directly from one of the
+                  largest eCommerce platforms in Europe.
+                </p>
+              </div>
+              <div class="product-page__sku">SKU: AC AC401</div>
+              <div class="product-page__quantity">Quantity: 65 Psc.</div>
+            </div>
+             <div class="product-page__buy">
+              <div class="product-page__buy-row" style="justify-content: flex-end;">
+               
+                <div class="product-page__price-wrap">
+                  <div class="product-page__price-container">
+                        <span class="product-page__price">€ 255</span>
+                  </div>
+                    <div class="product-page__price-container">
+                  <span class="product-page__price-vat">excl. VAT</span>
+                    </div>
+             
+                </div>
+              </div>
+              <div class="product-page__buy-column">
+                <button class="product-page__buy-btn">
+                  Add to cart
+                  <img src="./assets/images/icons/cart-white.svg" alt="" />
+                </button>
+                <p>
+                  <img src="./assets/images/icons/lock.svg" alt="" />
+                  <span>Payments secured</span>
+                </p>
+              </div>
+            </div>
+          <!--   <div class="product-page__buy">
+              <div class="product-page__price">
+                € 255 <span>excl. VAT</span>
+              </div>
+              <button>
+                Add to cart
+                <img src="./assets/images/icons/cart-white.svg" alt="" />
+              </button>
+              <p>
+                <img src="./assets/images/icons/lock.svg" alt="" />
+                <span>Payments secured</span>
+              </p>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="similar-products">
+        <div class="container">
+            <div class="similar-products__title title">
+                You may also like
+            </div>
+            <ul class="similar-products__content">
+                    <li class="products__item product">
+            <div class="product-card">
+              <div class="product-card__top">
+                <div class="product-card__quality product-card__quality--red">
+                  <p>C</p>
+                </div>
+                <img
+                  src="./assets/images/product/product-1.png"
+                  alt="Product 1"
+                  class="product-card__image"
+                />
+              </div>
+              <div class="product-card__bottom">
+                <div class="product-card__info">
+                  <div class="product-card__name">
+                    <h3>C Accessories AC AC401</h3>
+                  </div>
+                  <div class="product-card__price">
+                    € 255 <span>excl. VAT</span>
+                  </div>
+                </div>
+                <a href="#" class="product-card__button">
+                  <img
+                    src="./assets/images/icons/cart-white.svg"
+                    alt="Product cart"
+                  />
+                </a>
+              </div>
+            </div>
+          </li>
+              <li class="products__item product">
+            <div class="product-card">
+              <div class="product-card__top">
+                <div class="product-card__quality product-card__quality--red">
+                  <p>C</p>
+                </div>
+                <img
+                  src="./assets/images/product/product-1.png"
+                  alt="Product 1"
+                  class="product-card__image"
+                />
+              </div>
+              <div class="product-card__bottom">
+                <div class="product-card__info">
+                  <div class="product-card__name">
+                    <h3>C Accessories AC AC401</h3>
+                  </div>
+                  <div class="product-card__price">
+                    € 255 <span>excl. VAT</span>
+                  </div>
+                </div>
+                <a href="#" class="product-card__button">
+                  <img
+                    src="./assets/images/icons/cart-white.svg"
+                    alt="Product cart"
+                  />
+                </a>
+              </div>
+            </div>
+          </li>
+              <li class="products__item product">
+            <div class="product-card">
+              <div class="product-card__top">
+                <div class="product-card__quality product-card__quality--red">
+                  <p>C</p>
+                </div>
+                <img
+                  src="./assets/images/product/product-1.png"
+                  alt="Product 1"
+                  class="product-card__image"
+                />
+              </div>
+              <div class="product-card__bottom">
+                <div class="product-card__info">
+                  <div class="product-card__name">
+                    <h3>C Accessories AC AC401</h3>
+                  </div>
+                  <div class="product-card__price">
+                    € 255 <span>excl. VAT</span>
+                  </div>
+                </div>
+                <a href="#" class="product-card__button">
+                  <img
+                    src="./assets/images/icons/cart-white.svg"
+                    alt="Product cart"
+                  />
+                </a>
+              </div>
+            </div>
+          </li>
+              <li class="products__item product">
+            <div class="product-card">
+              <div class="product-card__top">
+                <div class="product-card__quality product-card__quality--red">
+                  <p>C</p>
+                </div>
+                <img
+                  src="./assets/images/product/product-1.png"
+                  alt="Product 1"
+                  class="product-card__image"
+                />
+              </div>
+              <div class="product-card__bottom">
+                <div class="product-card__info">
+                  <div class="product-card__name">
+                    <h3>C Accessories AC AC401</h3>
+                  </div>
+                  <div class="product-card__price">
+                    € 255 <span>excl. VAT</span>
+                  </div>
+                </div>
+                <a href="#" class="product-card__button">
+                  <img
+                    src="./assets/images/icons/cart-white.svg"
+                    alt="Product cart"
+                  />
+                </a>
+              </div>
+            </div>
+          </li>
+            </ul>
+        </div>
+    </section>
+
+    <section class="contactus">
+        <div class="container">
+            <div class="contactus__title title">Contact us</div>
+            <div class="contactus__content">
+                <div class="contactus__column">
+                    <div class="contactus__column-title">Order by phone</div>
+                    <div class="contactus__column-description">Our customer support service accepts requests from Monday to Friday, from 10:00 to 19:00 Warsaw time.</div>
+                    <a href="#" class="contactus__column-link"><span>contact via messenger</span><img src="./assets/images/icons/whatsapp.svg" alt=""></a>
+                </div>
+                <div class="contactus__column">
+                    <div class="contactus__column-title">Order via Instagram</div>
+                    <div class="contactus__column-description">Our managers provide consultations and assist with orders via Instagram, Monday to Friday, 10:00–19:00 (Warsaw time).</div>
+                    <a href="#" class="contactus__column-link"><span>subscribe</span><img src="./assets/images/icons/inst.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="workflow">
+      <div class="container">
+        <div class="workflow__content">
+          <div class="workflow__title title">
+            Stock clothing. Direct from USA. Delivered to your market.
+          </div>
+          <div class="workflow__description description">
+            We ensure regular deliveries, strict quality control, and
+            competitive prices — giving your business the consistency, trust,
+            and profitability it needs to succeed.
+          </div>
+          <div class="workflow__cards">
+            <div class="workflow__card">
+              <div class="workflow__card-title">Order & Assortment</div>
+              <div class="workflow__card-text">
+                Choose the required categories of stock clothing and accessories
+                (branded clothing, footwear, accessories). We help you select
+                the best assortment for your market.
+              </div>
+            </div>
+            <div class="workflow__card">
+              <div class="workflow__card-title">Order Process</div>
+              <div class="workflow__card-text">
+                The minimum order starts from 50 kg or 1 pallet. All goods are
+                carefully sorted, inspected, and securely packed for
+                transportation.
+              </div>
+            </div>
+            <div class="workflow__card">
+              <div class="workflow__card-title">Delivery</div>
+              <div class="workflow__card-text">
+                We arrange shipments across Europe: Poland, Germany, Czech
+                Republic, Slovakia, Lithuania, and England. Delivery is fast and
+                convenient.
+              </div>
+            </div>
+            <div class="workflow__card">
+              <div class="workflow__card-title">Customer Support</div>
+              <div class="workflow__card-text">
+                We assist you at every stage, providing advice on assortment,
+                logistics, and repeat orders.
+              </div>
+            </div>
+          </div>
+          <div class="workflow__slider swiper-slider">
+            <div class="workflow__buttons">
+              <div class="workflow-button-prev slider-button">
+                <img src="./assets/images/icons/arrow-left.svg" alt="" />
+              </div>
+              <div class="workflow-button-next slider-button">
+                <img src="./assets/images/icons/arrow-right.svg" alt="" />
+              </div>
+            </div>
+            <div class="swiper-wrapper">
+              <div class="workflow__card swiper-slide">
+                <div class="workflow__card-title">Order & Assortment</div>
+                <div class="workflow__card-text">
+                  Choose the required categories of stock clothing and
+                  accessories (branded clothing, footwear, accessories). We help
+                  you select the best assortment for your market.
+                </div>
+              </div>
+              <div class="workflow__card swiper-slide">
+                <div class="workflow__card-title">Order Process</div>
+                <div class="workflow__card-text">
+                  The minimum order starts from 50 kg or 1 pallet. All goods are
+                  carefully sorted, inspected, and securely packed for
+                  transportation.
+                </div>
+              </div>
+              <div class="workflow__card swiper-slide">
+                <div class="workflow__card-title">Delivery</div>
+                <div class="workflow__card-text">
+                  We arrange shipments across Europe: Poland, Germany, Czech
+                  Republic, Slovakia, Lithuania, and England. Delivery is fast
+                  and convenient.
+                </div>
+              </div>
+              <div class="workflow__card swiper-slide">
+                <div class="workflow__card-title">Customer Support</div>
+                <div class="workflow__card-text">
+                  We assist you at every stage, providing advice on assortment,
+                  logistics, and repeat orders.
+                </div>
+              </div>
+            </div>
+            <div class="workflow-pagination"></div>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+        <div class="cookie__modal">
+      <div class="cookie__title">yes, We use cookies...</div>
+      <div class="cookie__description">
+        We use cookies to enhance your browsing experience, analyze site
+        traffic, and provide personalized content. Some cookies are strictly
+        necessary and always active. You can accept all cookies and then you
+        agree with <a href="#">Privacy & Cookies Policy</a> or manage your
+        preferences below.
+      </div>
+      <div class="cookie__settings">
+        <div class="cookie__tab">
+          <div class="cookie__tab-header">
+            <div class="cookie__tab-name">Necessary</div>
+            <div class="cookie__tab-button">
+              <span>Always active</span>
+              <img src="./assets/images/icons/arrow-dropdown.svg" alt="" />
+            </div>
+          </div>
+          <div class="cookie__tab-body">
+            Used to deliver personalized ads and track campaigns. Examples:
+            Facebook Pixel, Google Ads. Scripts are blocked until consent is
+            given.
+          </div>
+        </div>
+
+        <div class="cookie__tab">
+          <div class="cookie__tab-header">
+            <div class="cookie__tab-name">Analytics</div>
+            <div class="cookie__tab-button">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+              <img src="./assets/images/icons/arrow-dropdown.svg" alt="" />
+            </div>
+          </div>
+          <div class="cookie__tab-body">
+            Used to deliver personalized ads and track campaigns. Examples:
+            Facebook Pixel, Google Ads. Scripts are blocked until consent is
+            given.
+          </div>
+        </div>
+
+        <div class="cookie__tab">
+          <div class="cookie__tab-header">
+            <div class="cookie__tab-name">Marketing</div>
+            <div class="cookie__tab-button">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+              <img src="./assets/images/icons/arrow-dropdown.svg" alt="" />
+            </div>
+          </div>
+          <div class="cookie__tab-body">
+            Used to deliver personalized ads and track campaigns. Examples:
+            Facebook Pixel, Google Ads. Scripts are blocked until consent is
+            given.
+          </div>
+        </div>
+      </div>
+      <div class="cookie__controls">
+        <button class="cookie__btn-customize">Customize</button>
+        <button class="cookie__btn-decline">Decline</button>
+        <button class="cookie__btn-accept">Accept All</button>
+        <button class="cookie__btn-save">Save</button>
+      </div>
+    </div>
+
+    <div class="lang__modal">
+      <div class="lang__modal-close">
+        <img src="./assets/images/icons/close.svg" alt="" />
+      </div>
+      <div class="lang__modal-description">
+        Choose a country or region. This affects the currency you’re billed in,
+        availability of items, price and delivery options.
+      </div>
+      <div class="lang__tab">
+        <div class="lang__tab-header">
+          <div class="lang__modal-select">Germany <span>eur €</span></div>
+          <img src="./assets/images/icons/arrow-dropdown.svg" alt="" />
+        </div>
+        <div class="lang__tab-body">
+          <div class="lang__modal-option">Germany <span>eur € </span></div>
+          <div class="lang__modal-option">Ukraine <span>uah ₴ </span></div>
+        </div>
+      </div>
+
+      <div class="lang__modal-description">
+        Choose the language you’d like to browse the site in
+      </div>
+      <div class="lang__tab">
+        <div class="lang__tab-header">
+          <div class="lang__modal-select">English <span> (american)</span></div>
+          <img src="./assets/images/icons/arrow-dropdown.svg" alt="" />
+        </div>
+        <div class="lang__tab-body">
+          <div class="lang__modal-option">English <span> (american)</span></div>
+          <div class="lang__modal-option">deutsch <span>german</span></div>
+        </div>
+      </div>
+      <button class="lang__modal-save">Save</button>
+    </div>
+    <div class="search__modal">
+      <div class="search__modal-container">
+        <div class="search__modal-icon">
+          <img src="./assets/images/icons/search.svg" alt="">
+        </div>
+        <div class="search__modal-field">
+           <input type="text"  placeholder="Enter your search query...">
+           <img src="./assets/images/icons/close.svg" alt="">
+        </div>
+        <div class="search__modal-button">
+          <button>Go</button>
+        </div>
+        
+      </div>
+    </div> 
+  <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__row">
+            <div class="footer__column">
+              <a class="footer__logo" href="index.html">
+                <img
+                  class="footer__logo_img"
+                  src="./assets/images/footer/logo-white.svg"
+                  alt="Logo"
+                />
+              </a>
+              <p class="footer__text">
+                Your largest wholesale importer in Europe.
+              </p>
+              <div class="footer__ratings-wrap">
+                <p class="footer__ratings-title">Rate us in Google:</p>
+                <div class="footer__ratings">
+                  <img
+                    src="./assets/images/main/goole-reviews.png"
+                    alt="Google ratings"
+                  />
+                  <div class="footer__ratings-text">
+                    <p>Google Rating: 4.9</p>
+                    <p>Based on <span>132 reviews</span></p>
+                  </div>
+                </div>
+              </div>
+               <div class="footer__localization">
+              <img src="./assets/images/icons/lang.svg" alt="Langauge" />
+              <p>germany, en, €</p>
+          </div>
+            </div>
+            <div class="footer__column">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">clothes</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">shoes</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">accessories</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">Pallet offer</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">sale</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">About us</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">Contact us</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">payment and delivery</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">Returns</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">FAQ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <div class="footer__title">Contact us:</div>
+              <div class="footer__messenger">
+                <p class="footer__messenger-text">contact via messenger</p>
+                <img
+                  src="./assets/images/footer/whatsapp.svg"
+                  alt=""
+                  class="footer__messenger-image"
+                />
+              </div>
+              <div class="footer__messenger">
+                <p class="footer__messenger-text">subscribe</p>
+                <img
+                  src="./assets/images/footer/inst.svg"
+                  alt=""
+                  class="footer__messenger-image"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="footer__localization">
+            <img src="./assets/images/icons/lang.svg" alt="Langauge" />
+            <p>germany, en, €</p>
+          </div>
+              <div class="footer__ratings-wrap">
+                <p class="footer__ratings-title">Rate us in Google:</p>
+                <div class="footer__ratings">
+                  <img
+                    src="./assets/images/main/goole-reviews.png"
+                    alt="Google ratings"
+                  />
+                  <div class="footer__ratings-text">
+                    <p>Google Rating: 4.9</p>
+                    <p>Based on <span>132 reviews</span></p>
+                  </div>
+                </div>
+              </div>
+          <div class="footer__copyright">
+         
+            <p>© 2025</p>
+            <div class="footer__link-wrap">
+              <a href="#" class="footer__link">Terms & Conditions</a>
+              <a href="#" class="footer__link">Privacy & Cookies Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> 
+  </body>
+</html>

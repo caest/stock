@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Stock - FAQ</title>
+  </head>
+  <body>
+      <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-content">
+            <ul class="header__top-menu">
+              <li class="header__top-menu-item">
+                <a class="header__top-menu-link" href="#">About us</a>
+              </li>
+              <li class="header__top-menu-item">
+                <a class="header__top-menu-link" href="#">Contact us</a>
+              </li>
+              <li class="header__top-menu-item">
+                <a class="header__top-menu-link" href="#"
+                  >Payment and delivery</a
+                >
+              </li>
+            </ul>
+            <div class="header__localization open-lang-popup">
+              <img
+                class="header__localization-icon"
+                src="./assets/images/icons/lang.svg"
+                alt="Language"
+              />
+              <span class="header__localization-text ">germany, en, €</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__main">
+        <div class="container">
+          <div class="header__main-content">
+            <div class="header__logo">
+              <img
+                class="header__logo-img"
+                src="./assets/images/icons/logo-black.svg"
+                alt="Logo"
+              />
+            </div>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">clothes</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">shoes</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">accessories</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">textile</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">mix</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">Pallet offer</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">sale</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__buttons">
+              <button class="header__search open-search-modal" type="button">
+                <img
+                  class="header__search-icon"
+                  src="./assets/images/icons/search.svg"
+                  alt="Search"
+                />
+              </button>
+              <button class="header__account" type="button">
+                <img
+                  class="header__account-icon"
+                  src="./assets/images/icons/account.svg"
+                  alt="Account"
+                />
+              </button>
+              <div class="header__cart">
+                <img
+                  class="header__cart-icon"
+                  src="./assets/images/icons/cart.svg"
+                  alt="Cart"
+                />
+                <span class="header__cart-count">0</span>
+              </div>
+              <button class="header__burger" type="button" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__mobile">
+        <div class="header__mobile-column">
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">clothes</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">shoes</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">accessories</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">textile</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">mix</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Pallet offer</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">sale</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__mobile-column">
+          <div class="header__localization open-lang-popup">
+            <img
+              class="header__localization-icon"
+              src="./assets/images/icons/lang-black.svg"
+              alt="Language"
+            />
+            <span class="header__localization-text">germany, en, €</span>
+          </div>
+        </div>
+        <div class="header__mobile-column">
+          <ul class="header__mobile-list">
+            <li class="header__mobile-list-item">
+              <a href="#" class="header__mobile-list-link">About us</a>
+            </li>
+            <li class="header__mobile-list-item">
+              <a href="#" class="header__mobile-list-link">Contact us</a>
+            </li>
+            <li class="header__mobile-list-item">
+              <a href="#" class="header__mobile-list-link"
+                >payment and delivery</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="header__mobile-column">
+          <ul class="header__mobile-list">
+            <li class="header__mobile-list-item">
+              <a href="#" class="header__mobile-list-link">Returns</a>
+            </li>
+            <li class="header__mobile-list-item">
+              <a href="#" class="header__mobile-list-link">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__mobile-column">
+          <a href="#" class="header-contact">
+            <div class="header-contact-text">contact via messenger</div>
+            <img
+              class="header-contact-icon"
+              src="./assets/images/icons/whatsapp.svg"
+              alt=""
+            />
+          </a>
+
+          <a href="#" class="header-contact">
+            <div class="header-contact-text">contact via messenger</div>
+            <img
+              class="header-contact-icon"
+              src="./assets/images/icons/inst.svg"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="page">
+      <div class="container">
+        <nav class="page__breadcrumbs breadcrumbs">
+          <a class="breadcrumbs__link" href="#">Home</a>
+          <span class="breadcrumbs__divider">/</span>
+          <a class="breadcrumbs__link" href="#">FAQ</a>
+        </nav>
+        <div class="faq__title title">
+          Frequently asked questions and answers
+        </div>
+        <div class="faq__content">
+          <div class="faq__tabs">
+            <div class="faq__tab is-active" data-category="all">
+              all categories
+            </div>
+            <div class="faq__tab" data-category="order-assortment">
+              Order & Assortment
+            </div>
+            <div class="faq__tab" data-category="order-process">
+              Order Process
+            </div>
+            <div class="faq__tab" data-category="delivery">delivery</div>
+          </div>
+
+          <div class="faq__wrap">
+            <div class="faq__container" data-category="order-assortment">
+              <div class="page__title">What is the minimum order quantity?</div>
+              <p class="page__text">
+                The minimum order starts from 100 kg (by weight) or from 1
+                pallet. This allows even small businesses to start with flexible
+                quantities.
+              </p>
+            </div>
+
+            <div class="faq__container" data-category="order-assortment">
+              <div class="page__title">
+                Can I order by weight or only by pallet?
+              </div>
+              <p class="page__text">
+                Yes, we offer both options. You can order mixed stock by weight
+                or full pallets depending on your needs.
+              </p>
+            </div>
+
+            <div class="faq__container" data-category="order-assortment">
+              <div class="page__title">
+                What types of products do you offer?
+              </div>
+              <p class="page__text">
+                We offer branded stock clothing, footwear, and accessories for
+                women, men, and children. Goods are available in different
+                segments (A, B, C) depending on condition and assortment.
+              </p>
+            </div>
+
+            <div class="faq__container" data-category="order-process">
+              <div class="page__title">How do I place an order?</div>
+              <p class="page__text">
+                You can place an order through our sales manager via email or
+                phone. After confirmation, we prepare your invoice and shipment
+                details.
+              </p>
+            </div>
+
+            <div class="faq__container" data-category="order-process">
+              <div class="page__title">Can I cancel or change my order?</div>
+              <p class="page__text">
+                Orders can be modified before dispatch. Once goods are shipped,
+                changes are no longer possible.
+              </p>
+            </div>
+
+            <div class="faq__container" data-category="delivery">
+              <div class="page__title">Do you ship internationally?</div>
+              <p class="page__text">
+                Yes, we deliver to most EU countries and beyond. Shipping costs
+                depend on the destination and weight of the order.
+              </p>
+            </div>
+
+            <div class="faq__container" data-category="delivery">
+              <div class="page__title">How long does delivery take?</div>
+              <p class="page__text">
+                Delivery time depends on location, usually 5–10 business days.
+                We provide tracking information once the goods are dispatched.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="faq__pagination pagination">
+          <a href="#" class="pagination__page is-active">1</a>
+          <a href="#" class="pagination__page">2</a>
+          <a href="#" class="pagination__page">3</a>
+          <a href="#" class="pagination__page">...</a>
+          <a href="#" class="pagination__page">6</a>
+        </div>
+      </div>
+    </section>
+       <div class="cookie__modal">
+      <div class="cookie__title">yes, We use cookies...</div>
+      <div class="cookie__description">
+        We use cookies to enhance your browsing experience, analyze site
+        traffic, and provide personalized content. Some cookies are strictly
+        necessary and always active. You can accept all cookies and then you
+        agree with <a href="#">Privacy & Cookies Policy</a> or manage your
+        preferences below.
+      </div>
+      <div class="cookie__settings">
+        <div class="cookie__tab">
+          <div class="cookie__tab-header">
+            <div class="cookie__tab-name">Necessary</div>
+            <div class="cookie__tab-button">
+              <span>Always active</span>
+              <img src="./assets/images/icons/arrow-dropdown.svg" alt="" />
+            </div>
+          </div>
+          <div class="cookie__tab-body">
+            Used to deliver personalized ads and track campaigns. Examples:
+            Facebook Pixel, Google Ads. Scripts are blocked until consent is
+            given.
+          </div>
+        </div>
+
+        <div class="cookie__tab">
+          <div class="cookie__tab-header">
+            <div class="cookie__tab-name">Analytics</div>
+            <div class="cookie__tab-button">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+              <img src="./assets/images/icons/arrow-dropdown.svg" alt="" />
+            </div>
+          </div>
+          <div class="cookie__tab-body">
+            Used to deliver personalized ads and track campaigns. Examples:
+            Facebook Pixel, Google Ads. Scripts are blocked until consent is
+            given.
+          </div>
+        </div>
+
+        <div class="cookie__tab">
+          <div class="cookie__tab-header">
+            <div class="cookie__tab-name">Marketing</div>
+            <div class="cookie__tab-button">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+              <img src="./assets/images/icons/arrow-dropdown.svg" alt="" />
+            </div>
+          </div>
+          <div class="cookie__tab-body">
+            Used to deliver personalized ads and track campaigns. Examples:
+            Facebook Pixel, Google Ads. Scripts are blocked until consent is
+            given.
+          </div>
+        </div>
+      </div>
+      <div class="cookie__controls">
+        <button class="cookie__btn-customize">Customize</button>
+        <button class="cookie__btn-decline">Decline</button>
+        <button class="cookie__btn-accept">Accept All</button>
+        <button class="cookie__btn-save">Save</button>
+      </div>
+    </div>
+
+    <div class="lang__modal">
+      <div class="lang__modal-close">
+        <img src="./assets/images/icons/close.svg" alt="" />
+      </div>
+      <div class="lang__modal-description">
+        Choose a country or region. This affects the currency you’re billed in,
+        availability of items, price and delivery options.
+      </div>
+      <div class="lang__tab">
+        <div class="lang__tab-header">
+          <div class="lang__modal-select">Germany <span>eur €</span></div>
+          <img src="./assets/images/icons/arrow-dropdown.svg" alt="" />
+        </div>
+        <div class="lang__tab-body">
+          <div class="lang__modal-option">Germany <span>eur € </span></div>
+          <div class="lang__modal-option">Ukraine <span>uah ₴ </span></div>
+        </div>
+      </div>
+
+      <div class="lang__modal-description">
+        Choose the language you’d like to browse the site in
+      </div>
+      <div class="lang__tab">
+        <div class="lang__tab-header">
+          <div class="lang__modal-select">English <span> (american)</span></div>
+          <img src="./assets/images/icons/arrow-dropdown.svg" alt="" />
+        </div>
+        <div class="lang__tab-body">
+          <div class="lang__modal-option">English <span> (american)</span></div>
+          <div class="lang__modal-option">deutsch <span>german</span></div>
+        </div>
+      </div>
+      <button class="lang__modal-save">Save</button>
+    </div>
+    <div class="search__modal">
+      <div class="search__modal-container">
+        <div class="search__modal-icon">
+          <img src="./assets/images/icons/search.svg" alt="">
+        </div>
+        <div class="search__modal-field">
+           <input type="text"  placeholder="Enter your search query...">
+           <img src="./assets/images/icons/close.svg" alt="">
+        </div>
+        <div class="search__modal-button">
+          <button>Go</button>
+        </div>
+        
+      </div>
+    </div> 
+  <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__row">
+            <div class="footer__column">
+              <a class="footer__logo" href="index.html">
+                <img
+                  class="footer__logo_img"
+                  src="./assets/images/footer/logo-white.svg"
+                  alt="Logo"
+                />
+              </a>
+              <p class="footer__text">
+                Your largest wholesale importer in Europe.
+              </p>
+              <div class="footer__ratings-wrap">
+                <p class="footer__ratings-title">Rate us in Google:</p>
+                <div class="footer__ratings">
+                  <img
+                    src="./assets/images/main/goole-reviews.png"
+                    alt="Google ratings"
+                  />
+                  <div class="footer__ratings-text">
+                    <p>Google Rating: 4.9</p>
+                    <p>Based on <span>132 reviews</span></p>
+                  </div>
+                </div>
+              </div>
+               <div class="footer__localization">
+              <img src="./assets/images/icons/lang.svg" alt="Langauge" />
+              <p>germany, en, €</p>
+          </div>
+            </div>
+            <div class="footer__column">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">clothes</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">shoes</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">accessories</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">Pallet offer</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">sale</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">About us</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">Contact us</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">payment and delivery</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">Returns</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">FAQ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <div class="footer__title">Contact us:</div>
+              <div class="footer__messenger">
+                <p class="footer__messenger-text">contact via messenger</p>
+                <img
+                  src="./assets/images/footer/whatsapp.svg"
+                  alt=""
+                  class="footer__messenger-image"
+                />
+              </div>
+              <div class="footer__messenger">
+                <p class="footer__messenger-text">subscribe</p>
+                <img
+                  src="./assets/images/footer/inst.svg"
+                  alt=""
+                  class="footer__messenger-image"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="footer__localization">
+            <img src="./assets/images/icons/lang.svg" alt="Langauge" />
+            <p>germany, en, €</p>
+          </div>
+              <div class="footer__ratings-wrap">
+                <p class="footer__ratings-title">Rate us in Google:</p>
+                <div class="footer__ratings">
+                  <img
+                    src="./assets/images/main/goole-reviews.png"
+                    alt="Google ratings"
+                  />
+                  <div class="footer__ratings-text">
+                    <p>Google Rating: 4.9</p>
+                    <p>Based on <span>132 reviews</span></p>
+                  </div>
+                </div>
+              </div>
+          <div class="footer__copyright">
+         
+            <p>© 2025</p>
+            <div class="footer__link-wrap">
+              <a href="#" class="footer__link">Terms & Conditions</a>
+              <a href="#" class="footer__link">Privacy & Cookies Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/scripts/main.js"></script>
+  </body>
+</html>

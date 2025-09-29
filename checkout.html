@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Stock - Checkout</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-content">
+            <ul class="header__top-menu">
+              <li class="header__top-menu-item">
+                <a class="header__top-menu-link" href="#">About us</a>
+              </li>
+              <li class="header__top-menu-item">
+                <a class="header__top-menu-link" href="#">Contact us</a>
+              </li>
+              <li class="header__top-menu-item">
+                <a class="header__top-menu-link" href="#"
+                  >Payment and delivery</a
+                >
+              </li>
+            </ul>
+            <div class="header__localization open-lang-popup">
+              <img
+                class="header__localization-icon"
+                src="./assets/images/icons/lang.svg"
+                alt="Language"
+              />
+              <span class="header__localization-text ">germany, en, €</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__main">
+        <div class="container">
+          <div class="header__main-content">
+            <div class="header__logo">
+              <img
+                class="header__logo-img"
+                src="./assets/images/icons/logo-black.svg"
+                alt="Logo"
+              />
+            </div>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">clothes</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">shoes</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">accessories</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">textile</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">mix</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">Pallet offer</a>
+                </li>
+                <li class="header__menu-item">
+                  <a href="#" class="header__menu-link">sale</a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__buttons">
+              <button class="header__search open-search-modal" type="button">
+                <img
+                  class="header__search-icon"
+                  src="./assets/images/icons/search.svg"
+                  alt="Search"
+                />
+              </button>
+              <button class="header__account" type="button">
+                <img
+                  class="header__account-icon"
+                  src="./assets/images/icons/account.svg"
+                  alt="Account"
+                />
+              </button>
+              <div class="header__cart">
+                <img
+                  class="header__cart-icon"
+                  src="./assets/images/icons/cart.svg"
+                  alt="Cart"
+                />
+                <span class="header__cart-count">0</span>
+              </div>
+              <button class="header__burger" type="button" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__mobile">
+        <div class="header__mobile-column">
+          <nav class="header__menu">
+            <ul class="header__menu-list">
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">clothes</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">shoes</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">accessories</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">textile</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">mix</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">Pallet offer</a>
+              </li>
+              <li class="header__menu-item">
+                <a href="#" class="header__menu-link">sale</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__mobile-column">
+          <div class="header__localization open-lang-popup">
+            <img
+              class="header__localization-icon"
+              src="./assets/images/icons/lang-black.svg"
+              alt="Language"
+            />
+            <span class="header__localization-text">germany, en, €</span>
+          </div>
+        </div>
+        <div class="header__mobile-column">
+          <ul class="header__mobile-list">
+            <li class="header__mobile-list-item">
+              <a href="#" class="header__mobile-list-link">About us</a>
+            </li>
+            <li class="header__mobile-list-item">
+              <a href="#" class="header__mobile-list-link">Contact us</a>
+            </li>
+            <li class="header__mobile-list-item">
+              <a href="#" class="header__mobile-list-link"
+                >payment and delivery</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="header__mobile-column">
+          <ul class="header__mobile-list">
+            <li class="header__mobile-list-item">
+              <a href="#" class="header__mobile-list-link">Returns</a>
+            </li>
+            <li class="header__mobile-list-item">
+              <a href="#" class="header__mobile-list-link">FAQ</a>
+            </li>
+          </ul>
+        </div>
+        <div class="header__mobile-column">
+          <a href="#" class="header-contact">
+            <div class="header-contact-text">contact via messenger</div>
+            <img
+              class="header-contact-icon"
+              src="./assets/images/icons/whatsapp.svg"
+              alt=""
+            />
+          </a>
+
+          <a href="#" class="header-contact">
+            <div class="header-contact-text">contact via messenger</div>
+            <img
+              class="header-contact-icon"
+              src="./assets/images/icons/inst.svg"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+    <section class="checkout">
+      <div class="container">
+        <div class="shop__top">
+          <div class="shop__title">Checkout</div>
+          <div class="shop__account">
+            <span>Already have an account?     <span><a href="#">Sign in </a><span>or</span> <a href="#">create account</a></span></span>
+        
+          </div>
+          
+        </div>
+        <div class="shop__content">
+          <div class="shop__container">
+            <div class="shop__tabs">
+              <div class="shop__tab">
+                <div class="shop__tab-title">1. DELIVERY</div>
+                <div class="shop__tab-container">
+                  <div class="shop__tab-select-wrap">
+                    <label class="shop__label">Country/region *</label>
+
+                    <div class="shop__tab-select">
+                      <button class="shop__tab-toggle" type="button">
+                        <p class="shop__tab-current">
+                          Germany <span>eur €</span>
+                        </p>
+                        <img
+                          src="./assets/images/icons/arrow-dropdown.svg"
+                          alt=""
+                          class="shop__tab-icon"
+                        />
+                      </button>
+
+                      <ul class="shop__tab-dropdown">
+                        <li>
+                          <button
+                            class="shop__tab-option is-active"
+                            type="button"
+                          >
+                            Germany <span>eur €</span>
+                          </button>
+                        </li>
+                        <li>
+                          <button class="shop__tab-option" type="button">
+                            France <span>eur €</span>
+                          </button>
+                        </li>
+                        <li>
+                          <button class="shop__tab-option" type="button">
+                            Spain <span>eur €</span>
+                          </button>
+                        </li>
+                        <li>
+                          <button class="shop__tab-option" type="button">
+                            Italy <span>eur €</span>
+                          </button>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="shop__controls">
+                  <div class="shop__controls-header">Delivery options</div>
+                  <div class="shop__controls-body">
+                    <div class="shop__controls-container">
+                      <input
+                        type="radio"
+                        name="delivery"
+                        class="shop__controls-radio"
+                        id="dhl"
+                      />
+                      <label for="dhl">
+                        <span class="custom-radio"></span>
+                        <img
+                          src="./assets/images/checkout/dhl.svg"
+                          alt=""
+                          class="shop__controls-logo"
+                        />
+                        <div class="shop__controls-label">
+                          DHL Pick-up Point
+                        </div>
+                      </label>
+                    </div>
+                    <div class="shop__controls-container">
+                      <input
+                        type="radio"
+                        name="delivery"
+                        class="shop__controls-radio"
+                        id="pdp"
+                      />
+                      <label for="pdp">
+                        <span class="custom-radio"></span>
+                        <img
+                          src="./assets/images/checkout/pdp.svg"
+                          alt=""
+                          class="shop__controls-logo"
+                        />
+                        <div class="shop__controls-label">
+                          PDP Pick-up Point
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="shop__form">
+                  <div class="shop__form-row">
+                    <label class="shop__label">Contact</label>
+                    <div class="shop__form-wrap">
+                      <div class="shop__form-field w50">
+                        <input
+                          class="shop__form-input"
+                          type="email"
+                          placeholder="EMAIL*"
+                          data-key="email"
+                        />
+                      </div>
+                      <div class="shop__form-field w50">
+                        <input
+                          class="shop__form-input"
+                          type="tel"
+                          placeholder="PHONE NUMBER*"
+                          data-key="phone"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="shop__form-row">
+                    <label class="shop__label">Delivery to</label>
+                    <div class="shop__form-wrap">
+                      <div class="shop__form-field w50">
+                        <input
+                          class="shop__form-input"
+                          type="text"
+                          placeholder="First name*"
+                          data-key="firstName"
+                        />
+                      </div>
+                      <div class="shop__form-field w50">
+                        <input
+                          class="shop__form-input"
+                          type="text"
+                          placeholder="Last name*"
+                          data-key="lastName"
+                        />
+                      </div>
+                      <div class="shop__form-field w50">
+                        <input
+                          class="shop__form-input"
+                          type="text"
+                          placeholder="Street name and number*"
+                          data-key="street"
+                        />
+                      </div>
+                      <div class="shop__form-field w50">
+                        <input
+                          class="shop__form-input"
+                          type="text"
+                          placeholder="Apartment number"
+                          data-key="apartment"
+                        />
+                      </div>
+                      <div class="shop__form-field w30">
+                        <input
+                          class="shop__form-input"
+                          type="text"
+                          placeholder="Zip code*"
+                          data-key="zip"
+                        />
+                      </div>
+                      <div class="shop__form-field w70">
+                        <input
+                          class="shop__form-input"
+                          type="text"
+                          placeholder="City*"
+                          data-key="city"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="shop__form-row">
+                    <div class="shop__form-container">
+                      <label class="shop__label">Billing to</label>
+                      <div class="shop__controls-container">
+                        <input
+                          type="radio"
+                          name="billing"
+                          class="shop__form-radio"
+                          id="billingDelivery"
+                        />
+                        <label for="billingDelivery">
+                          <span class="shop__form-custom-radio"></span>
+                          <div class="shop__controls-label">
+                            Same as delivery
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+
+                    <div class="shop__form-wrap">
+                      <div class="shop__form-field w100">
+                        <input
+                          class="shop__form-input"
+                          type="tel"
+                          placeholder="PHONE NUMBER*"
+                          data-key="phone"
+                        />
+                      </div>
+                      <div class="shop__form-field w50">
+                        <input
+                          class="shop__form-input"
+                          type="text"
+                          placeholder="First name*"
+                          data-key="firstName"
+                        />
+                      </div>
+                      <div class="shop__form-field w50">
+                        <input
+                          class="shop__form-input"
+                          type="text"
+                          placeholder="Last name*"
+                          data-key="lastName"
+                        />
+                      </div>
+                      <div class="shop__form-field w50">
+                        <input
+                          class="shop__form-input"
+                          type="text"
+                          placeholder="Street name and number*"
+                          data-key="street"
+                        />
+                      </div>
+                      <div class="shop__form-field w50">
+                        <input
+                          class="shop__form-input"
+                          type="text"
+                          placeholder="Apartment number"
+                          data-key="apartment"
+                        />
+                      </div>
+                      <div class="shop__form-field w30">
+                        <input
+                          class="shop__form-input"
+                          type="text"
+                          placeholder="Zip code*"
+                          data-key="zip"
+                        />
+                      </div>
+                      <div class="shop__form-field w70">
+                        <input
+                          class="shop__form-input"
+                          type="text"
+                          placeholder="City*"
+                          data-key="city"
+                        />
+                      </div>
+                      <div class="shop__form-field w100">
+                        <input
+                          class="shop__form-input"
+                          type="text"
+                          placeholder="Company"
+                          data-key="company"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="shop__tab-button">
+                  <button>Confirm</button>
+                </div>
+              </div>
+
+              <div class="shop__tab">
+                <div class="shop__tab-title">2. PAYMENT</div>
+                <div class="shop__tab-hide">
+                  Confirm your delivery details to select payment method.
+                </div>
+                <div class="shop__tab-container">
+                   <div class="shop__controls">
+                  <div class="shop__controls-header">PAYMENT options</div>
+                  <div class="shop__controls-body">
+                    <div class="shop__controls-container">
+                      <input
+                        type="radio"
+                        name="delivery"
+                        class="shop__controls-radio"
+                        id="stripe"
+                      />
+                      <label for="stripe">
+                        <span class="custom-radio"></span>
+                        <img
+                          src="./assets/images/checkout/stripe.svg"
+                          alt=""
+                          class="shop__controls-logo"
+                        />
+                        <div class="shop__controls-label">
+                         Stripe: international service for online card payments (Visa, MasterCard, etc.).
+                        </div>
+                      </label>
+                    </div>
+                    <div class="shop__controls-container">
+                      <input
+                        type="radio"
+                        name="delivery"
+                        class="shop__controls-radio"
+                        id="paypal"
+                      />
+                      <label for="paypal">
+                        <span class="custom-radio"></span>
+                        <img
+                          src="./assets/images/checkout/paypal.svg"
+                          alt=""
+                          class="shop__controls-logo"
+                        />
+                        <div class="shop__controls-label">
+                          PayPal: next time you can pay with PayPal without having to log in.
+                        </div>
+                      </label>
+                    </div>
+
+                       <div class="shop__controls-container">
+                      <input
+                        type="radio"
+                        name="delivery"
+                        class="shop__controls-radio"
+                        id="pl"
+                      />
+                      <label for="pl">
+                        <span class="custom-radio"></span>
+                        <img
+                          src="./assets/images/checkout/pl.svg"
+                          alt=""
+                          class="shop__controls-logo"
+                        />
+                        <div class="shop__controls-label">
+                          Przelewy24: you will be able to pay using your bank, BLIK or payment card.
+                        </div>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="shop__sidebar">
+            <div class="cart__discount cart__container">
+              <div class="cart__container-header">
+                <div class="cart__container-title">ADD DISCOUNT CODE</div>
+              </div>
+              <div class="cart__container-body">
+                <form class="form-discount" action="">
+                  <input type="text" placeholder="enter CODE" />
+                  <button>
+                    <span>add</span>
+                    <img src="./assets/images/icons/done.svg" alt="" />
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <div class="cart__discount cart__container">
+              <div class="cart__container-header">
+                <div class="cart__container-title">Summary</div>
+              </div>
+              <div class="cart__container-body">
+                <div class="cart__summary">
+                  <div class="cart__summary-row">
+                    <div class="cart__summary-subtotal">Subtotal</div>
+                    <div class="cart__summary-amount">€ 2940</div>
+                  </div>
+                  <div class="cart__summary-row">
+                    <div class="cart__summary-vat">VAT (23%)</div>
+                    <div class="cart__summary-amount">€ 676.2</div>
+                  </div>
+                  <div class="cart__summary-row cart__summary-border">
+                    <div class="cart__summary-total">Total</div>
+                    <div class="cart__summary-amount">€ 3616.2</div>
+                  </div>
+                  <div class="cart__summary-button">
+                    <a href="#" class="disable">Place order</a>
+                    <p>
+                      <img src="./assets/images/icons/lock.svg" alt="" />
+                      <span>Payments secured</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart__note shop__note">
+              By placing your order, you agree to our <a href="#">Terms & Conditions</a> and <a href="#">Privacy & Cookies Policy</a>
+            </div>
+          <!--   <a href="#" class="shop__link-shop tablet disable">Place order</a> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="needhelp" >
+      <div class="container">
+        <div class="needhelp__top">
+            <div class="needhelp__title title">Need help?</div>
+            <div class="needhelp__description description">Contact our Customer Service team, you can reach us by WhatsApp or
+                         Instagram. Alternatively, you may find the answer in our <span>Frequently Asked Questions page.</span></div>
+            </div>
+                         <div class="needhelp__content">
+                <div class="needhelp__column">
+                    <div class="page__title">contact by phone</div>
+                    <div class="needhelp__page__text page__text">Our customer support service accepts requests from Monday to Friday, from 10:00 to 19:00 Warsaw time.</div>
+              <a href="#" class="contactus__column-link"><span>contact via messenger</span><img src="./assets/images/icons/whatsapp.svg" alt=""></a>
+                </div>
+                     <div class="needhelp__column">
+                    <div class="page__title">contact via Instagram</div>
+                    <div class="needhelp__page__text page__text">Our managers provide consultations and assist with orders via Instagram, Monday to Friday, 10:00–19:00 (Warsaw time).</div>
+                <a href="#" class="contactus__column-link"><span>contact via Instagram</span><img src="./assets/images/icons/inst.svg" alt=""></a>
+                </div>
+                  <div class="needhelp__column">
+                    <div class="page__title">faq</div>
+                    <div class="needhelp__page__text page__text">Find the answers you need in our FAQ.</div>
+                <a href="#" class="contactus__column-link"><span>Find the answers </span><img src="./assets/images/icons/faq.svg" alt=""></a>
+                </div>
+             
+            </div>
+        
+      </div>
+      </div>
+    </section> 
+        <div class="cookie__modal">
+      <div class="cookie__title">yes, We use cookies...</div>
+      <div class="cookie__description">
+        We use cookies to enhance your browsing experience, analyze site
+        traffic, and provide personalized content. Some cookies are strictly
+        necessary and always active. You can accept all cookies and then you
+        agree with <a href="#">Privacy & Cookies Policy</a> or manage your
+        preferences below.
+      </div>
+      <div class="cookie__settings">
+        <div class="cookie__tab">
+          <div class="cookie__tab-header">
+            <div class="cookie__tab-name">Necessary</div>
+            <div class="cookie__tab-button">
+              <span>Always active</span>
+              <img src="./assets/images/icons/arrow-dropdown.svg" alt="" />
+            </div>
+          </div>
+          <div class="cookie__tab-body">
+            Used to deliver personalized ads and track campaigns. Examples:
+            Facebook Pixel, Google Ads. Scripts are blocked until consent is
+            given.
+          </div>
+        </div>
+
+        <div class="cookie__tab">
+          <div class="cookie__tab-header">
+            <div class="cookie__tab-name">Analytics</div>
+            <div class="cookie__tab-button">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+              <img src="./assets/images/icons/arrow-dropdown.svg" alt="" />
+            </div>
+          </div>
+          <div class="cookie__tab-body">
+            Used to deliver personalized ads and track campaigns. Examples:
+            Facebook Pixel, Google Ads. Scripts are blocked until consent is
+            given.
+          </div>
+        </div>
+
+        <div class="cookie__tab">
+          <div class="cookie__tab-header">
+            <div class="cookie__tab-name">Marketing</div>
+            <div class="cookie__tab-button">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider"></span>
+              </label>
+              <img src="./assets/images/icons/arrow-dropdown.svg" alt="" />
+            </div>
+          </div>
+          <div class="cookie__tab-body">
+            Used to deliver personalized ads and track campaigns. Examples:
+            Facebook Pixel, Google Ads. Scripts are blocked until consent is
+            given.
+          </div>
+        </div>
+      </div>
+      <div class="cookie__controls">
+        <button class="cookie__btn-customize">Customize</button>
+        <button class="cookie__btn-decline">Decline</button>
+        <button class="cookie__btn-accept">Accept All</button>
+        <button class="cookie__btn-save">Save</button>
+      </div>
+    </div>
+
+    <div class="lang__modal">
+      <div class="lang__modal-close">
+        <img src="./assets/images/icons/close.svg" alt="" />
+      </div>
+      <div class="lang__modal-description">
+        Choose a country or region. This affects the currency you’re billed in,
+        availability of items, price and delivery options.
+      </div>
+      <div class="lang__tab">
+        <div class="lang__tab-header">
+          <div class="lang__modal-select">Germany <span>eur €</span></div>
+          <img src="./assets/images/icons/arrow-dropdown.svg" alt="" />
+        </div>
+        <div class="lang__tab-body">
+          <div class="lang__modal-option">Germany <span>eur € </span></div>
+          <div class="lang__modal-option">Ukraine <span>uah ₴ </span></div>
+        </div>
+      </div>
+
+      <div class="lang__modal-description">
+        Choose the language you’d like to browse the site in
+      </div>
+      <div class="lang__tab">
+        <div class="lang__tab-header">
+          <div class="lang__modal-select">English <span> (american)</span></div>
+          <img src="./assets/images/icons/arrow-dropdown.svg" alt="" />
+        </div>
+        <div class="lang__tab-body">
+          <div class="lang__modal-option">English <span> (american)</span></div>
+          <div class="lang__modal-option">deutsch <span>german</span></div>
+        </div>
+      </div>
+      <button class="lang__modal-save">Save</button>
+    </div>
+    <div class="search__modal">
+      <div class="search__modal-container">
+        <div class="search__modal-icon">
+          <img src="./assets/images/icons/search.svg" alt="">
+        </div>
+        <div class="search__modal-field">
+           <input type="text"  placeholder="Enter your search query...">
+           <img src="./assets/images/icons/close.svg" alt="">
+        </div>
+        <div class="search__modal-button">
+          <button>Go</button>
+        </div>
+        
+      </div>
+    </div> 
+  <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__row">
+            <div class="footer__column">
+              <a class="footer__logo" href="index.html">
+                <img
+                  class="footer__logo_img"
+                  src="./assets/images/footer/logo-white.svg"
+                  alt="Logo"
+                />
+              </a>
+              <p class="footer__text">
+                Your largest wholesale importer in Europe.
+              </p>
+              <div class="footer__ratings-wrap">
+                <p class="footer__ratings-title">Rate us in Google:</p>
+                <div class="footer__ratings">
+                  <img
+                    src="./assets/images/main/goole-reviews.png"
+                    alt="Google ratings"
+                  />
+                  <div class="footer__ratings-text">
+                    <p>Google Rating: 4.9</p>
+                    <p>Based on <span>132 reviews</span></p>
+                  </div>
+                </div>
+              </div>
+               <div class="footer__localization">
+              <img src="./assets/images/icons/lang.svg" alt="Langauge" />
+              <p>germany, en, €</p>
+          </div>
+            </div>
+            <div class="footer__column">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">clothes</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">shoes</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">accessories</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">Pallet offer</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">sale</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <ul class="footer__menu-list">
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">About us</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">Contact us</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">payment and delivery</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">Returns</a>
+                </li>
+                <li class="footer__menu-item">
+                  <a href="#" class="footer__menu-link">FAQ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__column">
+              <div class="footer__title">Contact us:</div>
+              <div class="footer__messenger">
+                <p class="footer__messenger-text">contact via messenger</p>
+                <img
+                  src="./assets/images/footer/whatsapp.svg"
+                  alt=""
+                  class="footer__messenger-image"
+                />
+              </div>
+              <div class="footer__messenger">
+                <p class="footer__messenger-text">subscribe</p>
+                <img
+                  src="./assets/images/footer/inst.svg"
+                  alt=""
+                  class="footer__messenger-image"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="footer__localization">
+            <img src="./assets/images/icons/lang.svg" alt="Langauge" />
+            <p>germany, en, €</p>
+          </div>
+              <div class="footer__ratings-wrap">
+                <p class="footer__ratings-title">Rate us in Google:</p>
+                <div class="footer__ratings">
+                  <img
+                    src="./assets/images/main/goole-reviews.png"
+                    alt="Google ratings"
+                  />
+                  <div class="footer__ratings-text">
+                    <p>Google Rating: 4.9</p>
+                    <p>Based on <span>132 reviews</span></p>
+                  </div>
+                </div>
+              </div>
+          <div class="footer__copyright">
+         
+            <p>© 2025</p>
+            <div class="footer__link-wrap">
+              <a href="#" class="footer__link">Terms & Conditions</a>
+              <a href="#" class="footer__link">Privacy & Cookies Policy</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer> 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/scripts/main.js"></script>
+  </body>
+</html>
