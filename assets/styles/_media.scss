@@ -61,7 +61,7 @@
     margin: initial;
   }
   .error, .hero , .cart, .catalog , .checkout , .page , .product-page {
-    margin-top: 120px;
+    margin-top: 88px;
   }
   .padding-top {
     padding-bottom: 120px !important;
@@ -77,7 +77,7 @@
   }
   .search__modal {
     width: 99%;
-    top: 28%;
+    top: 135px;
   }
   .header {
     &__top {
@@ -1211,8 +1211,8 @@
   .search__modal {
     padding: 10px;
     width: 97%;
-    top: 23%;
     height: 65px;
+    top: 105px;
   }
   .search__modal-icon {
     width: 10%;
