@@ -1439,9 +1439,10 @@
     }
     &__products {
       gap: 10px;
-      .products__item {
-        width: 100%;
-      }
+     justify-content: space-between;
+     .products__item {
+      width: calc(50% - 10px);
+     }
     }
     &__pagination {
       margin-top: 30px;

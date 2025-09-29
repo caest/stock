@@ -196,6 +196,9 @@ body {
   line-height: 130%;
   text-transform: uppercase;
 }
+.header__menu-item:last-child .header__menu-link {
+  color: #e00d0d;
+}
 .header__menu-link {
   font-family: "Geologica";
   font-weight: 500;
@@ -204,10 +207,6 @@ body {
   letter-spacing: 0%;
   text-transform: uppercase;
   color: #161616;
-  transition: color 0.2s;
-}
-.header__menu-link:hover {
-  color: #e00d0d;
   transition: color 0.2s;
 }
 .header__buttons {
@@ -485,6 +484,9 @@ body {
   font-size: 20px;
   text-transform: uppercase;
 }
+.footer__menu-link.sale {
+  color: #e00d0d;
+}
 .footer__title {
   color: #868686;
   font-family: "Geologica";
@@ -597,7 +599,7 @@ body {
 
 .hero {
   background: url("../images/main/hero-bg.png") no-repeat center;
-  background-size: cover;
+  background-size: cover !important;
   height: 90vh;
   display: flex;
   align-items: flex-end;
@@ -4496,9 +4498,10 @@ body {
   }
   .catalog__products {
     gap: 10px;
+    justify-content: space-between;
   }
   .catalog__products .products__item {
-    width: 100%;
+    width: calc(50% - 10px);
   }
   .catalog__pagination {
     margin-top: 30px;

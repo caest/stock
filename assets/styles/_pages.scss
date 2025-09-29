@@ -1,7 +1,7 @@
 //main page
 .hero {
   background: url("../images/main/hero-bg.png") no-repeat center;
-  background-size: cover;
+  background-size: cover !important;
   height: 90vh;
   display: flex;
   align-items: flex-end;

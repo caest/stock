@@ -79,6 +79,11 @@ body {
         line-height: 130%;
         text-transform: uppercase;
       }
+      &:last-child {
+        .header__menu-link {
+    color: #e00d0d;
+        }
+      }
     }
 
     &-link {
@@ -90,10 +95,7 @@ body {
       text-transform: uppercase;
       color: #161616;
       transition: color 0.2s;
-      &:hover {
-        color: #e00d0d;
-        transition: color 0.2s;
-      }
+
     }
   }
   &__buttons {
@@ -374,6 +376,9 @@ body {
       font-weight: 500;
       font-size: 20px;
       text-transform: uppercase;
+      &.sale {
+        color: #e00d0d;
+      }
     }
   }
   &__title {
