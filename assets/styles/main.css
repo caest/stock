@@ -4744,6 +4744,12 @@ body {
     min-width: 40px;
     width: 40px;
   }
+  .product-page__quantity-form button img {
+    min-width: -moz-fit-content;
+    min-width: fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
   .product-page__quantity-form span {
     min-width: 50px;
   }
