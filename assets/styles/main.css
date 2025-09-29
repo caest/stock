@@ -31,12 +31,11 @@ a {
 }
 
 /* Reset images, video */
-img, picture, video, canvas, svg {
+/* img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
   height: auto;
-}
-
+} */
 /* Reset forms */
 input, button, textarea, select {
   font: inherit;
@@ -501,7 +500,7 @@ body {
   border: 1px solid #ffffff;
   border-radius: 50px;
   width: 100%;
-  padding: 12px;
+  padding: 12px 12px 12px 24px;
   margin-bottom: 20px;
 }
 .footer__messenger-text {
@@ -734,7 +733,7 @@ body {
 }
 
 .hotsale {
-  padding: 160px 0;
+  padding: 160px 0 0 0;
 }
 .hotsale__title {
   display: flex;
@@ -934,6 +933,7 @@ body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 90px;
+  position: relative;
 }
 .reviews__content {
   overflow: hidden;
@@ -946,11 +946,14 @@ body {
   letter-spacing: 0%;
   text-transform: uppercase;
   color: #161616;
+  margin: 0 auto;
 }
 .reviews__buttons {
   display: flex;
   align-items: center;
   gap: 40px;
+  position: absolute;
+  right: 0;
 }
 .reviews__slide {
   background: #fafafa;
@@ -1539,7 +1542,7 @@ body {
   color: #161616;
   border-radius: 50px;
   padding: 12px 24px;
-  text-wrap: nowrap;
+  white-space: nowrap;
 }
 .product-page__variation-button.is-active {
   background: #161616;
@@ -1790,14 +1793,14 @@ body {
   font-weight: 600;
   font-size: 20px;
   text-transform: uppercase;
-  color: #161616;
+  color: #484848;
 }
 .pallet-form input::placeholder {
   font-family: "Geologica";
   font-weight: 600;
   font-size: 20px;
   text-transform: uppercase;
-  color: #161616;
+  color: #484848;
 }
 
 /* pallet popup */
@@ -2193,6 +2196,11 @@ body {
   align-items: center;
   position: relative;
 }
+.form-discount-field {
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1019607843);
+  border: none;
+  border-radius: 50px;
+}
 .form-discount input {
   width: 100%;
   font-family: "Geologica";
@@ -2202,7 +2210,6 @@ body {
   color: #161616;
   border-radius: 50px;
   padding: 12px 24px;
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1019607843);
   border: none;
 }
 .form-discount input::-moz-placeholder {
@@ -2610,6 +2617,7 @@ body {
 .page {
   margin-top: 130px;
   padding-top: 20px;
+  padding-bottom: 160px;
 }
 .page .title {
   text-align: center;
@@ -2659,6 +2667,8 @@ body {
 
 .contactus-page {
   position: relative;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
 }
 .contactus-page__breadcrumbs {
   position: absolute;
@@ -2689,8 +2699,12 @@ body {
   font-size: clamp(16px, 1.8vw, 18px);
 }
 
+.padding-top {
+  padding: 0 0 160px 0 !important;
+}
+
 .needhelp {
-  padding: 160px 0;
+  padding: 160px 0 160px 0;
   background: url(../images/main/map.svg) no-repeat;
   background-size: cover;
 }
@@ -2795,6 +2809,7 @@ body {
   padding: 12px 24px;
   background: #fff;
   border-radius: 50px;
+  white-space: nowrap;
 }
 .faq__tab.is-active {
   color: #fff;
@@ -3328,8 +3343,24 @@ body {
   }
 }
 @media (max-width: 1400px) {
+  .reviews__buttons {
+    position: relative;
+  }
+  .reviews__title {
+    margin-right: auto;
+    margin: initial;
+  }
   .error, .hero, .cart, .catalog, .checkout, .page, .product-page {
     margin-top: 120px;
+  }
+  .padding-top {
+    padding-bottom: 120px !important;
+  }
+  .page {
+    padding-bottom: 80px;
+  }
+  .catalog__products {
+    margin-top: 40px;
   }
   .checkout {
     padding-top: 0;
@@ -4026,7 +4057,7 @@ body {
     max-width: 120px;
   }
   .cart__item-padding {
-    padding: 0 70px 0 0;
+    padding: 0 80px 0 0;
   }
   .cart__item-cell {
     font-size: 16px;
@@ -4160,8 +4191,30 @@ body {
   }
 }
 @media (max-width: 762px) {
+  .product-page__column:nth-child(2) img {
+    width: 100%;
+    height: 450px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .padding-top {
+    padding-bottom: 80px !important;
+  }
+  .cart {
+    padding-top: 20px;
+  }
+  .footer__messenger img {
+    width: 36px;
+    height: 36px;
+  }
   .error, .hero, .cart, .catalog, .checkout, .page, .product-page {
     margin-top: 65px;
+  }
+  .catalog__products {
+    margin-top: 20px;
+  }
+  .reviews__top {
+    margin-bottom: 30px;
   }
   .header__logo-img {
     width: 40px;
@@ -4332,7 +4385,8 @@ body {
   }
   .contactus-page {
     padding-top: 50px;
-    height: 85vh;
+    height: 75vh;
+    background-position-x: -430px !important;
   }
   .contactus-page .hero__content {
     padding: 0 !important;
