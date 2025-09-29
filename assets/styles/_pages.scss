@@ -2,10 +2,11 @@
 .hero {
   background: url("../images/main/hero-bg.png") no-repeat center;
   background-size: cover !important;
-  height: 90vh;
+  //height: 90vh;
   display: flex;
   align-items: flex-end;
   margin-top: 140px;
+
 
   &__content {
     display: flex;
@@ -48,6 +49,8 @@
     font-weight: 600;
     font-size: 20px;
     text-transform: uppercase;
+    display: block;
+    width: fit-content;
     &.black {
       background: #161616;
       color: #fff;
@@ -84,6 +87,12 @@
         }
       }
     }
+  }
+}
+
+.contactus-page .hero__content {
+  h1 {
+    padding-top: 300px;
   }
 }
 
@@ -1455,6 +1464,9 @@ background: #FAFAFA url(../images/main/map.svg) no-repeat;
     }
     &-img {
       max-width: 240px;
+      img {
+        width: 100%;
+      }
     }
     &-name {
       padding-bottom: 30px;
@@ -1876,11 +1888,10 @@ background: #FAFAFA url(../images/main/map.svg) no-repeat;
       flex-wrap: wrap;
       gap: 20px;
     }
+ 
     &-input {
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1019607843);
-    background: #fff;
-    border-radius: 50px;
-    padding: 16px 24px;
+
+   
     font-family: "Geologica";
     font-weight: 600;
     font-size: 20px;
@@ -1889,6 +1900,9 @@ background: #FAFAFA url(../images/main/map.svg) no-repeat;
     color: #161616;
     border: none;
     width: 100%;
+    height: 100%;
+   padding: 16px 24px;
+   border-radius: 50px;
       &::placeholder {
         font-family: "Geologica";
         font-weight: 600;
@@ -1900,6 +1914,13 @@ background: #FAFAFA url(../images/main/map.svg) no-repeat;
     }
 
     &-field {
+
+         &-wrap {
+        
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1019607843);
+    background: #fff;
+    border-radius: 50px;
+    }
       &.w30 {
         width: calc(30% - 20px);
       }
@@ -2226,9 +2247,23 @@ background: #FAFAFA url(../images/main/map.svg) no-repeat;
     text-align: center;
   }
 }
-
+.main-hero {
+  .hero__content {
+    h1 {
+      padding-top: 400px;
+    }
+  }
+}
+.mt160 {
+  margin-top: 160px;
+}
 //about us page
 .aboutus-page {
+  .hero__content {
+    h1 {
+      padding-top: 100px;
+    }
+  }
   &__breadcrumbs {
     position: absolute;
     top: 20px;
@@ -2283,6 +2318,7 @@ background: #FAFAFA url(../images/main/map.svg) no-repeat;
 //thanks
 .thankyou {
   padding: 160px 0;
+  margin-top: 130px;
   &__content {
     max-width: 1000px;
     margin: 0 auto;
@@ -2313,9 +2349,10 @@ background: #FAFAFA url(../images/main/map.svg) no-repeat;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  margin-top: 130px;
+  margin: 160px 0;
   &__image {
+    display: flex;
+    justify-content: center;
     &-mob {
       display: none;
     }
@@ -2353,6 +2390,7 @@ background: #FAFAFA url(../images/main/map.svg) no-repeat;
     background: #fff;
     box-shadow: 0px 2px 8px 0px #0000001a;
     z-index: 9999;
+    max-height: fit-content;
     display: none;
         overflow-y: auto;
     height: 100%;

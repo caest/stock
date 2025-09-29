@@ -53,6 +53,27 @@
 }
 
 @media (max-width: 1400px) {
+  .mt160 {
+    margin-top: 120px;
+  }
+  .main-hero {
+  .hero__content {
+    h1 {
+      padding-top: 100px;
+    }
+  }
+}
+  .aboutus-page {
+  .hero__content {
+    h1 {
+      padding-top: 0px;
+    }
+  }}
+  .contactus-page .hero__content {
+  h1 {
+    padding-top: 0px;
+  }
+}
   .reviews__buttons {
     position: relative;
   }
@@ -60,8 +81,11 @@
     margin-right: auto;
     margin: initial;
   }
-  .error, .hero , .cart, .catalog , .checkout , .page , .product-page {
+   .hero , .cart, .catalog , .checkout , .page , .product-page , .thankyou{
     margin-top: 88px;
+  }
+  .error {
+    margin: 120px 0;
   }
   .padding-top {
     padding-bottom: 120px !important;
@@ -1079,6 +1103,16 @@
   }
 }
 @media (max-width: 762px) {
+  .mt160 {
+    margin-top: 80px;
+  }
+    .main-hero {
+  .hero__content {
+    h1 {
+      padding-top: 0px;
+    }
+  }
+}
   .product-page__column:nth-child(2) img {
     width: 100%;
     height: 450px;
@@ -1097,8 +1131,11 @@
         height: 36px;
       }
     }
-    .error, .hero , .cart , .catalog, .checkout , .page , .product-page{
+     .hero , .cart , .catalog, .checkout , .page , .product-page , .thankyou{
     margin-top: 65px;
+  }
+  .error {
+  margin: 100px 0 80px;
   }
    .catalog__products {
     margin-top: 20px;
@@ -1290,8 +1327,8 @@
   }
   .contactus-page {
     padding-top: 50px;
-    height: 75vh;
-            background-position-x: -430px !important;
+   
+     background-position-x: -130px !important;
     .hero__content {
       padding: 0 !important;
     }
@@ -1746,6 +1783,7 @@
 
   .thankyou {
     padding-top: 60px;
+    padding-bottom: 80px;
     &__title {
       font-size: 32px;
     }

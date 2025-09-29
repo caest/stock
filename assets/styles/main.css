@@ -31,11 +31,12 @@ a {
 }
 
 /* Reset images, video */
-/* img, picture, video, canvas, svg {
+img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
   height: auto;
-} */
+}
+
 /* Reset forms */
 input, button, textarea, select {
   font: inherit;
@@ -599,7 +600,6 @@ body {
 .hero {
   background: url("../images/main/hero-bg.png") no-repeat center;
   background-size: cover !important;
-  height: 90vh;
   display: flex;
   align-items: flex-end;
   margin-top: 140px;
@@ -645,6 +645,9 @@ body {
   font-weight: 600;
   font-size: 20px;
   text-transform: uppercase;
+  display: block;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .hero__button.black {
   background: #161616;
@@ -677,6 +680,10 @@ body {
   text-decoration: underline;
   text-decoration-style: solid;
   text-decoration-thickness: 8.5%;
+}
+
+.contactus-page .hero__content h1 {
+  padding-top: 300px;
 }
 
 .showcase {
@@ -2018,6 +2025,9 @@ body {
 .cart__item-img {
   max-width: 240px;
 }
+.cart__item-img img {
+  width: 100%;
+}
 .cart__item-name {
   padding-bottom: 30px;
   font-family: "Geologica";
@@ -2427,10 +2437,6 @@ body {
   gap: 20px;
 }
 .shop__form-input {
-  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1019607843);
-  background: #fff;
-  border-radius: 50px;
-  padding: 16px 24px;
   font-family: "Geologica";
   font-weight: 600;
   font-size: 20px;
@@ -2439,6 +2445,9 @@ body {
   color: #161616;
   border: none;
   width: 100%;
+  height: 100%;
+  padding: 16px 24px;
+  border-radius: 50px;
 }
 .shop__form-input::-moz-placeholder {
   font-family: "Geologica";
@@ -2455,6 +2464,11 @@ body {
   line-height: 130%;
   text-transform: uppercase;
   color: #868686;
+}
+.shop__form-field-wrap {
+  box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1019607843);
+  background: #fff;
+  border-radius: 50px;
 }
 .shop__form-field.w30 {
   width: calc(30% - 20px);
@@ -2782,6 +2796,17 @@ body {
   text-align: center;
 }
 
+.main-hero .hero__content h1 {
+  padding-top: 400px;
+}
+
+.mt160 {
+  margin-top: 160px;
+}
+
+.aboutus-page .hero__content h1 {
+  padding-top: 100px;
+}
 .aboutus-page__breadcrumbs {
   position: absolute;
   top: 20px;
@@ -2832,6 +2857,7 @@ body {
 
 .thankyou {
   padding: 160px 0;
+  margin-top: 130px;
 }
 .thankyou__content {
   max-width: 1000px;
@@ -2861,8 +2887,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
-  margin-top: 130px;
+  margin: 160px 0;
+}
+.error__image {
+  display: flex;
+  justify-content: center;
 }
 .error__image-mob {
   display: none;
@@ -2899,6 +2928,8 @@ body {
   background: #fff;
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1019607843);
   z-index: 9999;
+  max-height: -moz-fit-content;
+  max-height: fit-content;
   display: none;
   overflow-y: auto;
   height: 100%;
@@ -3347,6 +3378,18 @@ body {
   }
 }
 @media (max-width: 1400px) {
+  .mt160 {
+    margin-top: 120px;
+  }
+  .main-hero .hero__content h1 {
+    padding-top: 100px;
+  }
+  .aboutus-page .hero__content h1 {
+    padding-top: 0px;
+  }
+  .contactus-page .hero__content h1 {
+    padding-top: 0px;
+  }
   .reviews__buttons {
     position: relative;
   }
@@ -3354,8 +3397,11 @@ body {
     margin-right: auto;
     margin: initial;
   }
-  .error, .hero, .cart, .catalog, .checkout, .page, .product-page {
+  .hero, .cart, .catalog, .checkout, .page, .product-page, .thankyou {
     margin-top: 88px;
+  }
+  .error {
+    margin: 120px 0;
   }
   .padding-top {
     padding-bottom: 120px !important;
@@ -4195,6 +4241,12 @@ body {
   }
 }
 @media (max-width: 762px) {
+  .mt160 {
+    margin-top: 80px;
+  }
+  .main-hero .hero__content h1 {
+    padding-top: 0px;
+  }
   .product-page__column:nth-child(2) img {
     width: 100%;
     height: 450px;
@@ -4211,8 +4263,11 @@ body {
     width: 36px;
     height: 36px;
   }
-  .error, .hero, .cart, .catalog, .checkout, .page, .product-page {
+  .hero, .cart, .catalog, .checkout, .page, .product-page, .thankyou {
     margin-top: 65px;
+  }
+  .error {
+    margin: 100px 0 80px;
   }
   .catalog__products {
     margin-top: 20px;
@@ -4389,8 +4444,7 @@ body {
   }
   .contactus-page {
     padding-top: 50px;
-    height: 75vh;
-    background-position-x: -430px !important;
+    background-position-x: -130px !important;
   }
   .contactus-page .hero__content {
     padding: 0 !important;
@@ -4785,6 +4839,7 @@ body {
   }
   .thankyou {
     padding-top: 60px;
+    padding-bottom: 80px;
   }
   .thankyou__title {
     font-size: 32px;
