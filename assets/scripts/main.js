@@ -730,5 +730,35 @@ if (saleSlider) {
     });
   }
 
+  // -------------------- ERROR EYES --------------------
+const leftEye = document.querySelector(".left-eye")
+const rightEye = document.querySelector(".right-eye")
+
+if (leftEye && rightEye) {
+  const leftCenter = { x: +leftEye.getAttribute("cx"), y: +leftEye.getAttribute("cy") }
+  const rightCenter = { x: +rightEye.getAttribute("cx"), y: +rightEye.getAttribute("cy") }
+  const radius = 10
+
+  document.addEventListener("mousemove", e => {
+    const { clientX, clientY } = e
+
+    moveEye(leftEye, leftCenter, clientX, clientY)
+    moveEye(rightEye, rightCenter, clientX, clientY)
+  })
+
+  function moveEye(eye, center, mouseX, mouseY) {
+    const dx = mouseX - center.x
+    const dy = mouseY - center.y
+    const angle = Math.atan2(dy, dx)
+
+    const newX = center.x + Math.cos(angle) * radius
+    const newY = center.y + Math.sin(angle) * radius
+
+    eye.setAttribute("cx", newX)
+    eye.setAttribute("cy", newY)
+  }
+}
+
+
   // -------------------- END --------------------
 });

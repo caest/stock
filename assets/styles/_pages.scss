@@ -225,7 +225,7 @@
   background-size: cover;
 }
 .workflow {
-  background: url("../images/main/map.svg") no-repeat;
+background: #FAFAFA url(../images/main/map.svg) no-repeat;
   background-size: cover;
   padding: 160px 0 160px 0;
   &__title {
@@ -657,6 +657,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      white-space: nowrap;
       &.is-active {
         color: #ffffff;
         background: #161616;
@@ -2336,7 +2337,9 @@
     margin-top: 40px;
   }
 }
-
+.slider-button {
+  margin-right: 5px;
+}
 //main page modal
 .cookie {
   &__modal {
@@ -2351,6 +2354,8 @@
     box-shadow: 0px 2px 8px 0px #0000001a;
     z-index: 9999;
     display: none;
+        overflow-y: auto;
+    height: 100%;
   }
   &__title {
     font-family: "Geologica";

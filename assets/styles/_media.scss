@@ -377,8 +377,9 @@
   }
   //workflow
   .workflow {
-    background-position-y: 140px;
-    background-position-x: -590px;
+        background-position-y: 19px;
+        background-position-x: -120px;
+
     padding: 120px 0 120px 0;
     &__cards {
       flex-wrap: wrap;
@@ -1313,6 +1314,17 @@
       }
     }
   }
+  .slider-button {
+    img {
+      width: 14px;
+    }
+  }
+  .workflow__buttons, .reviews__buttons, .offers__button , .hotsale__button {
+    padding: 20px 5px 20px 0;
+  }
+  .slider-button {
+    margin-right: 0;
+  }
   .workflow {
     padding: 80px 0 80px 0;
     &__title,
@@ -1328,37 +1340,49 @@
     &__card {
       width: 100%;
       padding: 25px 20px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: #fff;
+        top: 0;
+      }
       &-title {
         font-size: 20px;
         min-height: 30px;
+        position: relative;
+        z-index: 1;
       }
       &-text {
         font-size: 16px;
+        padding-top: 40px;
       }
       &:nth-child(1) {
         &:before {
-          top: -30px;
+          top: -25px;
           z-index: -1;
           font-size: 36px;
         }
       }
       &:nth-child(2) {
         &:before {
-          top: -30px;
+          top: -25px;
           z-index: -1;
           font-size: 36px;
         }
       }
       &:nth-child(3) {
         &:before {
-          top: -30px;
+          top: -25px;
           z-index: -1;
           font-size: 36px;
         }
       }
       &:nth-child(4) {
         &:before {
-          top: -30px;
+          top: -25px;
           z-index: -1;
           font-size: 36px;
         }

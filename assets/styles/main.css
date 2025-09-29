@@ -817,7 +817,7 @@ body {
 }
 
 .workflow {
-  background: url("../images/main/map.svg") no-repeat;
+  background: #FAFAFA url(../images/main/map.svg) no-repeat;
   background-size: cover;
   padding: 160px 0 160px 0;
 }
@@ -1230,6 +1230,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  white-space: nowrap;
 }
 .catalog__filters-btn.is-active {
   color: #ffffff;
@@ -2883,6 +2884,10 @@ body {
   margin-top: 40px;
 }
 
+.slider-button {
+  margin-right: 5px;
+}
+
 .cookie__modal {
   padding: 40px 30px;
   position: fixed;
@@ -2895,6 +2900,8 @@ body {
   box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.1019607843);
   z-index: 9999;
   display: none;
+  overflow-y: auto;
+  height: 100%;
 }
 .cookie__title {
   font-family: "Geologica";
@@ -3633,8 +3640,8 @@ body {
     height: 650px;
   }
   .workflow {
-    background-position-y: 140px;
-    background-position-x: -590px;
+    background-position-y: 19px;
+    background-position-x: -120px;
     padding: 120px 0 120px 0;
   }
   .workflow__cards {
@@ -4402,6 +4409,15 @@ body {
     padding: 12px;
     gap: 5px;
   }
+  .slider-button img {
+    width: 14px;
+  }
+  .workflow__buttons, .reviews__buttons, .offers__button, .hotsale__button {
+    padding: 20px 5px 20px 0;
+  }
+  .slider-button {
+    margin-right: 0;
+  }
   .workflow {
     padding: 80px 0 80px 0;
   }
@@ -4418,30 +4434,41 @@ body {
     width: 100%;
     padding: 25px 20px;
   }
+  .workflow__card::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    top: 0;
+  }
   .workflow__card-title {
     font-size: 20px;
     min-height: 30px;
+    position: relative;
+    z-index: 1;
   }
   .workflow__card-text {
     font-size: 16px;
+    padding-top: 40px;
   }
   .workflow__card:nth-child(1):before {
-    top: -30px;
+    top: -25px;
     z-index: -1;
     font-size: 36px;
   }
   .workflow__card:nth-child(2):before {
-    top: -30px;
+    top: -25px;
     z-index: -1;
     font-size: 36px;
   }
   .workflow__card:nth-child(3):before {
-    top: -30px;
+    top: -25px;
     z-index: -1;
     font-size: 36px;
   }
   .workflow__card:nth-child(4):before {
-    top: -30px;
+    top: -25px;
     z-index: -1;
     font-size: 36px;
   }
